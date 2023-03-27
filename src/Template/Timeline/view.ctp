@@ -7,7 +7,10 @@
 <?= $this->element('header')?>
 
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 <section class="h-100" style="background-color: #ffffff; padding-bottom: 100px;">
 
