@@ -6,10 +6,6 @@
 
 <?= $this->element('header')?>
 
-
- <!-- sfdfisdhfishfivshnoihvisdhgidsfgi>
-
-
 <section class="h-100" style="background-color: #ffffff; padding-bottom: 100px;">
 
     <div class="container-xxl mb-5">
