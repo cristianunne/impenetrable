@@ -1,5 +1,5 @@
 $('#textarea').keyup(function () {
-    var maxLength = 300;
+    var maxLength = 500;
     var text = $(this).val();
     var textLength = text.length;
     if (textLength > maxLength) {

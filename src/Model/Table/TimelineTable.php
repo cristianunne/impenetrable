@@ -44,7 +44,7 @@ class TimelineTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->nonNegativeInteger('idtimeline')
+            ->integer('idtimeline')
             ->allowEmptyString('idtimeline', null, 'create');
 
         $validator
@@ -60,7 +60,7 @@ class TimelineTable extends Table
 
         $validator
             ->scalar('description')
-            ->maxLength('description', 300)
+            ->maxLength('description', 500)
             ->requirePresence('description', 'create')
             ->notEmptyString('description');
 

@@ -205,14 +205,14 @@
 
 
 
-/* New Timeline 
+/* New Timeline
 body{
 background:#ddd;
 }
 
 /*-------------------
 -----News Styles-----
----------------------*/    
+---------------------*/
 /*.timeline{
     position:relative;
     margin-bottom:100px;
@@ -229,7 +229,7 @@ background:#ddd;
     top:0;
     border-right:1px solid #5CC9DF;
     z-index:-1;
-} 
+}
 
 .timeline:after{
     display:block;
@@ -241,7 +241,7 @@ background:#ddd;
     bottom:-105px;
     border-right:1px dashed #5CC9DF;
     z-index:-1;
-} 
+}
 
 .timeline .date-title{
     text-align:center;
@@ -493,7 +493,7 @@ background:#ddd;
 }*/
 
 /* Timeline 3 */
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -519,9 +519,9 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 .cd-horizontal-timeline {
@@ -544,7 +544,6 @@ Main Components
   position: relative;
   height: 100px;
   width: 90%;
-  max-width: 800px;
   margin: 0 auto;
 }
 .cd-horizontal-timeline .events-wrapper {

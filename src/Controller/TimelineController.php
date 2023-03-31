@@ -43,6 +43,7 @@ class TimelineController extends AppController
         $this->set(compact('timeline'));
 
 
+
         $this->set('categoria', $categoria);
 
     }
@@ -54,8 +55,7 @@ class TimelineController extends AppController
         $categoria= $data_url['Categoria'];
 
         $timeline = $this->Timeline->find('all', [])
-            ->orderDesc('fecha');
-
+            ->orderAsc('fecha');
 
         $this->set('timeline', $timeline);
         $this->set('categoria', $categoria);
