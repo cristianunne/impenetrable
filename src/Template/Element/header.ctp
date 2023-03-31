@@ -5,7 +5,12 @@
     <nav class="navbar navbar-expand-lg navbar-light navbar-impenetrable px-4 px-lg-5 py-3 py-lg-0 nav-backgorund">
         <a href="/impenetrable" class="navbar-brand p-0">
             <!-- <h1 class="m-0"><i class="fa fa-tree me-2"></i><span class="fs-5">EL IMPENETRABLE</span></h1>-->
-            <img id="logo" src="../img/logo-impenetrable-blanco.png" alt="Logo"> 
+            <!-- <img id="logo" src="../img/logo-impenetrable-blanco.png" alt="Logo">-->
+            <?=
+                $this->Html->image('logo-impenetrable-blanco.png', ['id' => 'logo']);
+            ?>
+
+
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
@@ -71,20 +76,20 @@
         $(function(){
         $(document).scroll(function(){
             if($(this).scrollTop() > 1) {
-                $('#logo').attr('src','img/logo-impenetrable.png')
+                $('#logo').attr('src','/impenetrable/img/logo-impenetrable-blanco.png')
             }
-            if($(this).scrollTop() < 1) {        
-             $('#logo').attr('src','img/logo-impenetrable-blanco.png');
+            if($(this).scrollTop() < 1) {
+             $('#logo').attr('src','/impenetrable/img/logo-impenetrable-blanco.png');
             }
         });
     });
     $(function(){
     $(window).on("resize", function(){
           if($(window).width() < 720){
-              $('#logo').attr("src","img/logo-impenetrable.png");
+              $('#logo').attr("src","/impenetrable/img/logo-impenetrable-logo.png");
           }
           else{
-              $('#logo').attr("src","img/logo-impenetrable-blanco.png");
+              $('#logo').attr("src","/impenetrable/img/logo-impenetrable-blanco.png");
           }
         })
     });
