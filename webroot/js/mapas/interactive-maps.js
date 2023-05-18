@@ -222,7 +222,7 @@ function createLabelLeft(title, idloc, id_layer)
         let div_container = '<div class="div-label-left-container">' +
                                 '<div>' +
                                     '<div class="div-img">' +
-                                        ' <img src="../img/icons/mapa.png" alt="img" class="img-label">' +
+                                        ' <img src="../webroot/img/icons/MC_AyA_Cesteria.png" alt="img" class="img-label">' +
                                     '</div>' +
                                     ' <span class="span-name">' + title + '</span>' +
                                     '<div class="div-btn">' +

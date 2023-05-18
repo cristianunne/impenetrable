@@ -814,13 +814,15 @@ Main Components
   display: block;
   font-style: italic;
   margin: 10px auto;
+  color: #959595;
 }
-.cd-horizontal-timeline .events-content em::before {
+/*.cd-horizontal-timeline .events-content em::before {
   content: '- ';
-}
+}*/
 .cd-horizontal-timeline .events-content p {
   font-size: 1.4rem;
-  color: #959595;
+  color: #000;
+  /*color: #959595;*/
 }
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
   line-height: 1.6;

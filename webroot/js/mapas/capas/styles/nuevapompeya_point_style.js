@@ -93,8 +93,9 @@ function onEachFeatureNuevapompeyaPoint(feature, layer)
 }
 
 var artesaniasIcon = L.icon({
-    iconUrl: '../webroot/img/icons/ceramica.png',
-    iconSize:     [35, 35], // size of the icon
+    //iconUrl: '../webroot/img/icons/ceramica.png',
+    iconUrl: '../webroot/img/icons/MC_AyA_Alfareria.png',
+    iconSize:     [42, 42], // size of the icon
     shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 22], // point of the icon which will correspond to marker's location
     shadowAnchor: [4, 4],  // the same for the shadow
@@ -103,8 +104,9 @@ var artesaniasIcon = L.icon({
 });
 
 
-var areaNaturalIcon = L.icon({
-    iconUrl: '../webroot/img/icons/hoja.png',
+var greenIcon = L.icon({
+    //iconUrl: '../webroot/img/icons/hoja.png',
+    iconUrl: '../webroot/img/icons/SN_CA_Lagunas.png',
     iconSize:     [35, 35], // size of the icon
     shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 22], // point of the icon which will correspond to marker's location
@@ -112,9 +114,9 @@ var areaNaturalIcon = L.icon({
     popupAnchor:  [-3, -76], // point from which the popup should open relative to the iconAnchor
     className: 'animated-icon'
 });
-
 var miradorIcon = L.icon({
-    iconUrl: '../webroot/img/icons/observacion.png',
+    //iconUrl: '../webroot/img/icons/observacion.png',
+    iconUrl: '../webroot/img/icons/SC_ARQ_Miradores.png',
     iconSize:     [35, 35], // size of the icon
     shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 22], // point of the icon which will correspond to marker's location
@@ -124,7 +126,7 @@ var miradorIcon = L.icon({
 });
 
 var greenSpaceIcon = L.icon({
-    iconUrl: '../webroot/img/icons/parque_nat.png',
+    iconUrl: '../webroot/img/icons/SN_AP_Parques_Provinciales.png',
     iconSize:     [45, 45], // size of the icon
     shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 22], // point of the icon which will correspond to marker's location
@@ -135,7 +137,8 @@ var greenSpaceIcon = L.icon({
 
 
 var misionIcon = L.icon({
-    iconUrl: '../webroot/img/icons/iglesia.png',
+    //iconUrl: '../webroot/img/icons/iglesia.png',
+    iconUrl: '../webroot/img/icons/SC_ARQ_Monumentos.png',
     iconSize:     [35, 35], // size of the icon
     shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 22], // point of the icon which will correspond to marker's location
@@ -145,8 +148,8 @@ var misionIcon = L.icon({
 });
 
 var casaParqueIcon = L.icon({
-    iconUrl: '../webroot/img/icons/casa-verde.png',
-    iconSize:     [25, 25], // size of the icon
+    iconUrl: '../webroot/img/icons/SC_ARQ_Adminitracion.png',
+    iconSize:     [35, 35], // size of the icon
     shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 22], // point of the icon which will correspond to marker's location
     shadowAnchor: [4, 4],  // the same for the shadow
@@ -157,8 +160,9 @@ var casaParqueIcon = L.icon({
 
 
 var parajeIndIcon = L.icon({
-    iconUrl: '../webroot/img/icons/maloca.png',
-    iconSize:     [30, 30], // size of the icon
+    //iconUrl: '../webroot/img/icons/maloca.png',
+    iconUrl: '../webroot/img/icons/SC_Parajes.png',
+    iconSize:     [35, 35], // size of the icon
     shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 22], // point of the icon which will correspond to marker's location
     shadowAnchor: [4, 4],  // the same for the shadow
@@ -183,7 +187,7 @@ var layer_nuevapompeya_point = new L.geoJson(nueva_pompeya_point, {
         //console.log(feature.properties.categoria);
         switch (feature.properties.categoria) {
             case 1:
-                return L.marker(latlng, {icon: areaNaturalIcon});
+                return L.marker(latlng, {icon: greenIcon});
             case 2:
                 return L.marker(latlng, {icon: artesaniasIcon});
             case 3:
@@ -196,7 +200,6 @@ var layer_nuevapompeya_point = new L.geoJson(nueva_pompeya_point, {
                 return L.marker(latlng, {icon: greenSpaceIcon});
             case 7:
                 return L.marker(latlng, {icon: casaParqueIcon});
-
         }
     },
 });

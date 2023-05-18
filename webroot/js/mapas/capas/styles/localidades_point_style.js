@@ -109,7 +109,8 @@ function onEachFeatureLocPoint(feature, layer)
 
 
 var greenIcon = L.icon({
-    iconUrl: '../webroot/img/icons/location.png',
+    //iconUrl: '../webroot/img/icons/location.png',
+    iconUrl: '../webroot/img/icons/Custom_Locations.png',
     iconSize:     [50, 50], // size of the icon
     shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 22], // point of the icon which will correspond to marker's location
