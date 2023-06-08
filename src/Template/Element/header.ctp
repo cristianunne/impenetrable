@@ -76,7 +76,7 @@
         $(function(){
         $(document).scroll(function(){
             if($(this).scrollTop() > 1) {
-                $('#logo').attr('src','/impenetrable/img/logo-impenetrable-blanco.png')
+                $('#logo').attr('src','/impenetrable/img/logo-impenetrable.png')
             }
             if($(this).scrollTop() < 1) {
              $('#logo').attr('src','/impenetrable/img/logo-impenetrable-blanco.png');
@@ -85,8 +85,8 @@
     });
     $(function(){
     $(window).on("resize", function(){
-          if($(window).width() < 720){
-              $('#logo').attr("src","/impenetrable/img/logo-impenetrable-logo.png");
+          if($(window).width() < 992){
+              $('#logo').attr("src","/impenetrable/img/logo-impenetrable.png");
           }
           else{
               $('#logo').attr("src","/impenetrable/img/logo-impenetrable-blanco.png");

@@ -6,6 +6,12 @@
 
 <?= $this->element('header')?>
 
+
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
+
 <section class="h-100" style="background-color: #ffffff; padding-bottom: 100px;">
 
     <div class="container-xxl mb-5">
@@ -34,27 +40,146 @@
             <h2 class="mt-2 text-success ">Línea Histórica de Avance del Proyecto de Investigación</h2>
         </div>
     </div>
--->
 
+
+    <!-- <div class="timeline">
+        <?php $i = 0; ?>
+
+        <?php foreach ($timeline as $time): ?>
+
+            <?php  if(($i % 2) == 0): ?>
+                <div class="container left">
+                    <div class="date"><?= h($time->fecha->format('d-m-Y')) ?></div>
+                    <i class="icon fa-solid fa-calendar"></i>
+                    <div class="content">
+                        <h2><?= h($time->title) ?></h2>
+                        <p>
+                            <?= h($time->description) ?>
+                        </p>
+                    </div>
+                </div>
+
+            <?php else: ?>
+
+                <div class="container right">
+                    <div class="date"><?= h($time->fecha->format('d-m-Y')) ?></div>
+                    <i class="icon fa-solid fa-calendar"></i>
+                    <div class="content"><h2>
+                            <?= h($time->title) ?></h2>
+                        <p>
+                            <?= h($time->description) ?>
+                        </p>
+                    </div>
+                </div>
+
+            <?php endif; ?>
+
+            <?php $i = $i + 1; ?>
+
+        <?php endforeach; ?>
+
+    </div>-->
 
 <section class="cd-horizontal-timeline">
     <div class="timeline">
         <div class="events-wrapper">
             <div class="events">
                 <ol>
+        <?php $i = 0; ?>
+            <?php foreach ($timeline as $time): ?>
+                <?php  if($i == 0): ?>
+                    <li>
+                        <a href="#0" data-date="<?= h($time->fecha->format('m/d/Y')) ?>" class="selected"><?= h($time->fecha->format('M Y')) ?></a>
+                    </li>
+                <?php else: ?>
+                    <li>
+                        <a href="#0" data-date="<?= h($time->fecha->format('m/d/Y')) ?>"><?= h($time->fecha->format('M Y')) ?></a>
+                    </li>
+                    <?php endif; ?>
+                <?php $i++; ?>
+            <?php endforeach; ?>
+                </ol>
 
-                    <?php $i = 0; ?>
+                <span class="filling-line" aria-hidden="true"></span>
+            </div> <!-- .events -->
+        </div> <!-- .events-wrapper -->
+            
+        <ul class="cd-timeline-navigation">
+            <li><a href="#0" class="prev inactive"><i class='fa fa-chevron-right'></i></a></li>
+            <li><a href="#0" class="next"><i class='fa fa-chevron-right'></i></a></li>
+        </ul> <!-- .cd-timeline-navigation -->
+    </div> <!-- .timeline -->
 
-                    <?php foreach ($timeline as $time): ?>
-                        <?php  if($i == 0): ?>
-                            <li><a href="#0" data-date="<?= h($time->fecha->format('d/m/Y')) ?>" class="selected"><?= h($time->fecha->format("d-m-y")) ?></a></li>
-                        <?php else: ?>
-                            <li><a href="#0" data-date="<?= h($time->fecha->format('d/m/Y')) ?>" class=""><?= h($time->fecha->format("d-m-y")) ?></a></li>
-                        <?php endif; ?>
-                        <?php $i++; ?>
-                    <?php endforeach; ?>
+    <div class="events-content">
+        <ol>
+<?php $i = 0; ?>
+    <?php foreach ($timeline as $time): ?>
+        <?php  if($i == 0): ?>
+            <li class="selected" data-date="<?= h($time->fecha->format('m/d/Y')) ?>">
+                <h2><?= h($time->title) ?></h2>
+                <em><i class="fa fa-calendar-alt"></i> <?= h($time->fecha->format('d M, Y')) ?></em>
+                <p><?= h($time->description) ?></p>
+            </li>
+        <?php else: ?>
+            <li data-date="<?= h($time->fecha->format('m/d/Y')) ?>">
+                <h2><?= h($time->title) ?></h2>
+                <em><i class="fa fa-calendar-alt"></i> <?= h($time->fecha->format('d M, Y')) ?></em>
+                <p><?= h($time->description) ?></p>
+            </li>
+        <?php endif; ?>
+      <?php $i++; ?>
+    <?php endforeach; ?>
+        </ol>
+    </div> <!-- .events-content -->
+</section>
 
-                    <!--<li><a href="#0" data-date="16/01/2014" class="selected">16 Ene</a></li>
+<section class="cd-horizontal-timeline">
+    <div class="timeline">
+        <div class="events-wrapper">
+            <div class="events">
+                <ol>
+                <?php $i = 0; ?>
+                <?php foreach ($timeline as $i => $time): ?>
+                  <?php $fecha = $time->fecha; ?>
+                  <?php if($i == 0) : ?>
+                    <?php echo '<li><a  href="#0" data-date="'.$fecha.'" class="selected">'.$fecha.'</a></li>'; ?>
+                  <?php else: ?>
+                    <?php echo '<li><a  href="#0" data-date="'.$fecha.'" class="">'.$fecha.'</a></li>'; ?>
+                  <?php endif; ?>
+                <?php endforeach; ?>
+                </ol>
+
+                <span class="filling-line" aria-hidden="true"></span>
+            </div> <!-- .events -->
+        </div> <!-- .events-wrapper -->
+            
+        <ul class="cd-timeline-navigation">
+            <li><a href="#0" class="prev inactive"><i class='fa fa-chevron-right'></i></a></li>
+            <li><a href="#0" class="next"><i class='fa fa-chevron-right'></i></a></li>
+        </ul> <!-- .cd-timeline-navigation -->
+    </div> <!-- .timeline -->
+
+    <div class="events-content">
+        <ol>
+        <?php $i = 0; ?>
+        <?php foreach ($timeline as $i => $time): ?>
+          <?php $fecha = $time->fecha; $title = $time->title; $description = $time->description; ?>
+          <?php if($i == 0) : ?>
+            <?php echo '<li class="selected"><h2>'.$title.'</h2><em>'.$fecha->format('d M, Y').'</em><p>'.$description.'</p></li>'; ?>
+          <?php else: ?>
+            <?php echo '<li><h2>'.$title.'</h2><em>'.$fecha.'</em><p>'.$description.'</p></li>'; ?>
+          <?php endif; ?>
+        <?php endforeach; ?>
+        </ol>
+    </div>
+</section>
+
+<section class="cd-horizontal-timeline">
+    <div class="timeline">
+        <div class="events-wrapper">
+            <div class="events">
+                <ol>
+                    <li><a href="#0" data-date="16/01/2014" class="selected">16 Ene</a></li>
                     <li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
                     <li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
                     <li><a href="#0" data-date="20/05/2014">20 May</a></li>
@@ -64,13 +189,13 @@
                     <li><a href="#0" data-date="01/11/2014">1 Nov</a></li>
                     <li><a href="#0" data-date="10/12/2014">10 Dic</a></li>
                     <li><a href="#0" data-date="19/01/2015">29 Ene</a></li>
-                    <li><a href="#0" data-date="03/03/2015">3 Mar</a></li>-->
+                    <li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
                 </ol>
 
                 <span class="filling-line" aria-hidden="true"></span>
             </div> <!-- .events -->
         </div> <!-- .events-wrapper -->
-
+            
         <ul class="cd-timeline-navigation">
             <li><a href="#0" class="prev inactive"><i class='fa fa-chevron-right'></i></a></li>
             <li><a href="#0" class="next"><i class='fa fa-chevron-right'></i></a></li>
@@ -82,7 +207,7 @@
             <li class="selected" data-date="16/01/2014">
                 <h2>Inicio del proyecto de investigación</h2>
                 <em>16 de enero de 2020</em>
-                <p>
+                <p> 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
                 </p>
             </li>
@@ -90,7 +215,7 @@
             <li data-date="28/02/2014">
                 <h2>Etapa de lecturas iniciales</h2>
                 <em>28 de febrero 2020</em>
-                <p>
+                <p> 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
                 </p>
             </li>
@@ -98,7 +223,7 @@
             <li data-date="20/04/2014">
                 <h2>Relevamiento en oficinas de turismo y gubernamentales de los proyectos turísticos y de promoción del Impenetrable</h2>
                 <em>20 de abril de 2020</em>
-                <p>
+                <p> 
                     (Chaco Explora, Master Plan, Fundación del PNI)
                 </p>
             </li>
@@ -106,7 +231,7 @@
             <li data-date="20/05/2014">
                 <h2>Lecturas y análisis de políticas públicas generadas desde el Instituto de Turismo</h2>
                 <em>20 de mayo de 2021</em>
-                <p>
+                <p> 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
                 </p>
             </li>
@@ -114,7 +239,7 @@
             <li data-date="09/07/2014">
                 <h2>Reuniones de trabajo con el Instituto de Turismo</h2>
                 <em>9 de julio de 2021</em>
-                <p>
+                <p> 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
                 </p>
             </li>
@@ -122,7 +247,7 @@
             <li data-date="30/08/2014">
                 <h2>Surgió la idea de crear un mapa con un itinerario en línea</h2>
                 <em>30 de agosto de 2021</em>
-                <p>
+                <p> 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
                 </p>
             </li>
@@ -130,7 +255,7 @@
             <li data-date="15/09/2014">
                 <h2>Presentación de algunas ponencias en el EGAL</h2>
                 <em>15 de septiembre 2021</em>
-                <p>
+                <p> 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
                 </p>
             </li>
@@ -138,7 +263,7 @@
             <li data-date="01/11/2014">
                 <h2>Se iniciaron las tareas de campo en el Impenetrable</h2>
                 <em>1 de noviembre 2022</em>
-                <p>
+                <p> 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
                 </p>
             </li>
@@ -146,7 +271,7 @@
             <!-- <li data-date="10/12/2014">
                 <h2>Event title here</h2>
                 <em>December 10th, 2014</em>
-                <p>
+                <p> 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
                 </p>
             </li>
@@ -154,7 +279,7 @@
             <li data-date="19/01/2015">
                 <h2>Event title here</h2>
                 <em>January 19th, 2015</em>
-                <p>
+                <p> 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
                 </p>
             </li>
@@ -162,7 +287,7 @@
             <li data-date="03/03/2015">
                 <h2>Event title here</h2>
                 <em>March 3rd, 2015</em>
-                <p>
+                <p> 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
                 </p>
             </li> -->

@@ -52,9 +52,12 @@ $cakeDescription = 'El Impenetrable: PICTO-UNNE 2019-00028';
     <?= $this->Html->css('bootstrap_template.min.css') ?>
     <?= $this->Html->css('style.css') ?>
     <?= $this->Html->css('impenetrable_config.css') ?>
+    <?= $this->Html->css('leaflet-routing-machine-3.2.12/leaflet-routing-machine.css') ?>
+
 
     <?= $this->Html->script('jquery-3.6.0.min.js') ?>
     <?= $this->Html->script('bootstrap.bundle.min.js') ?>
+    
 
 
 
@@ -81,6 +84,7 @@ $cakeDescription = 'El Impenetrable: PICTO-UNNE 2019-00028';
     <?= $this->Html->script('lib/isotope/isotope.pkgd.min.js') ?>
     <?= $this->Html->script('lib/lightbox/js/lightbox.min.js') ?>
 
+    <?= $this->Html->script('leaflet-routing-machine-3.2.12/leaflet-routing-machine.js') ?>
     <?= $this->Html->script('template_main.js') ?>
 
 
