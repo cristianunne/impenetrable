@@ -91,6 +91,7 @@ function onEachFeatureMirafloresPoint(feature, layer)
 
 }
 
+
 var treeIcon = L.icon({
     //iconUrl: '../webroot/img/icons/tree.png',
     iconUrl: '../webroot/img/icons/SN_LP_Flora.png',
