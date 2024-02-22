@@ -26,8 +26,10 @@ class CartographyController extends AppController
     public function interactiveMap()
     {
 
+    }
 
-
+    public function downloadData()
+    {
 
     }
 
@@ -44,6 +46,7 @@ class CartographyController extends AppController
         {
             $localidades = $_POST['localidades'];
         }
+
 
 
         if($this->request->is('ajax')) {
@@ -70,7 +73,7 @@ class CartographyController extends AppController
             }
         }
 
-        return false;
+        return null;
     }
 
 
@@ -106,6 +109,28 @@ class CartographyController extends AppController
 
             $puntos_interes_data = $puntosdeinteres_model->find('all', [])
                 ->where(['id_punto' => $id, 'localidad' => $id_loc])->toArray();
+
+
+            return $this->json($puntos_interes_data);
+        }
+
+
+        return false;
+    }
+
+    public function getDataPOI()
+    {
+        $id = $_POST['id'];
+
+        //model localidades
+        $puntosdeinteres_model = $this->loadModel('PuntosInteres');
+
+        if($this->request->is('ajax')) {
+
+            $puntos_interes_data = $puntosdeinteres_model->find('all', [
+                'contain' => ['Categorias', 'Tipo', 'Subtipo']
+            ])
+                ->where(['localidad' => $id])->toArray();
 
 
             return $this->json($puntos_interes_data);

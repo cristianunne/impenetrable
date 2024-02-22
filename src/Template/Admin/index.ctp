@@ -1,111 +1,26 @@
 
 
-<?= $this->Html->css('timeline.css') ?>
 <?= $this->element('admin/header')?>
 
-<section class="h-100" style="background-color: #ffffff; padding-bottom: 100px; padding-top: 70px;">
 
 
+    <div class="container-xxl mb-5">
 
+        <div class="row py-5 landing-inte-back">
+            <div class="col-xs-5 col-md-5 col-lg-5 valign-center" style="text-align: center; display:table">
+                <h1 class="wow zoomIn" style="vertical-align: middle; color: #198754; margin-top: 30%;">
+                    Panel de Administración
+                </h1>
 
-    <div>
-        <h1 style="text-align: center; color: #0c4128">Timeline del Proyecto</h1>
-    </div>
+                <p class="wow zoomIn" style="vertical-align: middle; color: #198754;">
+                  Sección de administración del Sitio
+                </p>
 
+            </div>
+            <div class="col-xs-7 col-md-7 col-lg-7 valign-center">
+                <?=  $this->Html->image('admin-svgrepo-com.svg', ['alt' => 'CakePHP', 'class' => 'img-fluid img-landing-int wow zoomIn']); ?>
+            </div>
+        </div>
 
-<div class="timeline">
-    <div class="container left">
-        <div class="date">15 Dec</div>
-        <i class="icon fa fa-home"></i>
-        <div class="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-        </div>
-    </div>
-    <div class="container right">
-        <div class="date">22 Oct</div>
-        <i class="icon fa fa-gift"></i>
-        <div class="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-        </div>
-    </div>
-    <div class="container left">
-        <div class="date">10 Jul</div>
-        <i class="icon fa fa-user"></i>
-        <div class="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-        </div>
-    </div>
-    <div class="container right">
-        <div class="date">18 May</div>
-        <i class="icon fa fa-running"></i>
-        <div class="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-        </div>
-    </div>
-    <div class="container left">
-        <div class="date">10 Feb</div>
-        <i class="icon fa fa-cog"></i>
-        <div class="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-        </div>
-    </div>
-    <div class="container right">
-        <div class="date">01 Jan</div>
-        <i class="icon fa fa-certificate"></i>
-        <div class="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-        </div>
     </div>
 
-    <div class="container right">
-        <div class="date">01 Jan</div>
-        <i class="icon fa fa-certificate"></i>
-        <div class="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-        </div>
-    </div>
-
-    <div class="container right">
-        <div class="date">01 Jan</div>
-        <i class="icon fa fa-certificate"></i>
-        <div class="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-        </div>
-    </div>
-
-    <div class="container right">
-        <div class="date">01 Jan</div>
-        <i class="icon fa fa-certificate"></i>
-        <div class="content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-            </p>
-        </div>
-    </div>
-</div>
-</section>

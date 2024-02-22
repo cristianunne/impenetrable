@@ -35,7 +35,12 @@
                     <p style="text-align: justify;">Estudiamos la potencialidad ambiental del Impenetrable. Particularmente las formaciones biogeográficas y
                         geomorfológicas del Impenetrable como características esenciales que distinguen al Impenetrable
                         como espacio único de gran interés turístico.</p>
-                    <a class="btn px-3 mt-auto mx-auto" href="">Leer más...</a>
+
+                    <?=  $this->Html->link(
+                        'Leer más',
+                        ['controller' => 'Cartography', 'action' => 'downloadData', '?' => ['Categoria' => 'Mapainteractive', 'Context' => 'Admin']],
+                        ['class' => 'btn px-3 mt-auto mx-auto']
+                    ); ?>
                 </div>
             </div>
 

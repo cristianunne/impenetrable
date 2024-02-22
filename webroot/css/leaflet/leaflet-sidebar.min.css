@@ -24,7 +24,31 @@
     .leaflet-sidebar.collapsed {
         width: 90%;
         height: 50px;
+        transition: all ease-in 1s;
     }
+
+    .img-header-card {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        height: 50%;
+        min-width: 100px;
+        max-width: 100px;
+        min-height: 100px;
+        max-height: 100px;
+    }
+    .card-img-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-title{
+        text-align: center;
+        font-size: small;
+    }
+
+
 }
 @media (min-width: 768px) {
     .leaflet-sidebar {
@@ -223,7 +247,7 @@
 .leaflet-sidebar-tabs > li.active,
 .leaflet-sidebar-tabs > ul > li.active {
 	color: #000;
-    
+
     /* color: #fff;
     background-color: #0074d9;*/
 }
@@ -252,6 +276,7 @@
 }
 .leaflet-sidebar-tabs > ul + ul {
     bottom: 0;
+    display: none !important;
 }
 .leaflet-sidebar-content {
     position: absolute;
@@ -341,8 +366,9 @@
 @media (max-width: 768px) {
     .leaflet-sidebar {
         border-radius: 4px !important;
-        width: 90% !important;
-        height: 269px !important;
+        width: 90%;
+        height: 268px;
+        transition: all ease-in 1s;
     }
     .leaflet-sidebar.leaflet-touch {
         border: 2px solid rgba(0, 0, 0, 0.2) !important;
@@ -407,4 +433,9 @@
 }
 .leaflet-sidebar-right.collapsed ~ .leaflet-control-container .leaflet-right {
     right: 50px;
+}
+
+.top-90{
+    top: 91% !important;
+    transition: all ease-in 1s;
 }

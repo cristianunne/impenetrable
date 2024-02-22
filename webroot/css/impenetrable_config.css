@@ -780,6 +780,7 @@ body.example div.dataTables_wrapper ul li, body.example div.dataTables_wrapper o
 .img-header-card{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .card:hover{
@@ -826,4 +827,9 @@ body.example div.dataTables_wrapper ul li, body.example div.dataTables_wrapper o
 }
 .span-name{
     word-wrap: break-word;
+}
+
+.pagina-works{
+    width: 700px;
+    height: 550px;
 }

@@ -11,8 +11,17 @@ use Cake\ORM\Entity;
  * @property int $id_punto
  * @property string|null $description
  * @property string|null $resumen
- * @property string|null $path
  * @property string $name
+ * @property string $name_localidad
+ * @property int|null $categorias_idcategorias
+ * @property int|null $tipo_idtipo
+ * @property int|null $subtipo_idsubtipo
+ * @property string|null $photo
+ * @property string|null $folder
+ *
+ * @property \App\Model\Entity\Categoria $categoria
+ * @property \App\Model\Entity\Tipo $tipo
+ * @property \App\Model\Entity\Subtipo $subtipo
  */
 class PuntosIntere extends Entity
 {
@@ -30,7 +39,15 @@ class PuntosIntere extends Entity
         'id_punto' => true,
         'description' => true,
         'resumen' => true,
-        'path' => true,
         'name' => true,
+        'name_localidad' => true,
+        'categorias_idcategorias' => true,
+        'tipo_idtipo' => true,
+        'subtipo_idsubtipo' => true,
+        'photo' => true,
+        'folder' => true,
+        'categoria' => true,
+        'tipo' => true,
+        'subtipo' => true,
     ];
 }

@@ -9,9 +9,9 @@
  */
 (function ($) {
     "use strict";
-    
+
     var nextId = 0;
-    
+
     var JFilestyle = function (element, options) {
         this.options = options;
         this.$elementjFilestyle = [];
@@ -40,7 +40,7 @@
                 return this.options.dragdrop;
             }
         },
-        
+
         disabled : function (value) {
 			if (value === true) {
 				if (!this.options.disabled) {
@@ -58,7 +58,7 @@
 				return this.options.disabled;
 			}
 		},
-		
+
 		buttonBefore : function (value) {
 			if (value === true) {
 				if (!this.options.buttonBefore) {
@@ -133,7 +133,7 @@
                 return this.options.inputSize;
             }
         },
-        
+
 		placeholder : function(value) {
 			if (value !== undefined) {
 				this.options.placeholder = value;
@@ -150,7 +150,7 @@
                 return '';
             }
         },
-        
+
         // puts the name of the input files
         // return files
 		pushNameFiles : function() {
@@ -172,7 +172,7 @@
 			} else {
 				this.$elementjFilestyle.find(':text').val('');
 			}
-			
+
 			return files;
 		},
 
@@ -188,13 +188,13 @@
                 _self.$element.attr({'id': id});
                 nextId++;
             }
-            
+
             html = '<span class="focus-jfilestyle">'+
                      '<label for="'+id+'" ' + (_self.options.disabled ? 'disabled="true"' : '') + '>'+
                        '<span>'+_self.options.text+'</span>'+
                      '</label>'+
                    '</span>';
-            
+
             if (_self.options.buttonBefore === true) {
 	            html = html + _self.htmlInput();
             } else {
@@ -222,7 +222,7 @@
                 .css({'position': 'absolute', 'clip': 'rect(0px 0px 0px 0px)'})
                 .attr('tabindex', "-1")
                 .after(_self.$elementjFilestyle);
-			
+
 			if (_self.options.disabled) {
 				_self.$element.attr('disabled', 'true');
 			}
@@ -233,11 +233,11 @@
                 height: _self.$elementjFilestyle.height()+'px',
                 'z-index': -1
             });
-			
+
             // Getting input file value
             _self.$element.change(function () {
             	var files = _self.pushNameFiles();
-            	
+
             	if (_self.options.input == false) {
 					if (_self.$elementjFilestyle.find('.count-jfilestyle').length == 0) {
 						_self.$elementjFilestyle.find('label').append(' <span class="count-jfilestyle">' + files.length + '</span>');
@@ -300,7 +300,7 @@
                                 e.stopPropagation();
                                 _self.$element[0].files = e.originalEvent.dataTransfer.files;
                                 var files = _self.pushNameFiles();
-                
+
                                 if (_self.options.input == false) {
                                     if (_self.$elementjFilestyle.find('.count-jfilestyle').length == 0) {
                                         _self.$elementjFilestyle.find('label').append(' <span class="count-jfilestyle">' + files.length + '</span>');
@@ -380,7 +380,7 @@
                     'theme': $this.attr('data-theme'),
                     'dragdrop': $this.attr('data-dragdrop') !== 'false'
                 };
-    
+
             $this.jfilestyle(options);
         });
     });

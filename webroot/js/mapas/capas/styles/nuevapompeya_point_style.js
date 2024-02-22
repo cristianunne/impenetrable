@@ -9,7 +9,7 @@ function style_nuevapompeya_0_0() {
 function tooltip_nuevapompeya_point(feature) {
 
     let layer = feature;
-    let popupContent_2 = '<strong>' + layer.properties.Nombre.toString() + '</strong>';
+    let popupContent_2 = '<strong>' + layer.properties.nombre.toString() + '</strong>';
     return popupContent_2;
 }
 
@@ -55,7 +55,7 @@ function createdPopup(feature, data)
     let layer = feature.target;
     //console.log(layer);
 
-    let title = "<h5 style='text-align: center; color: #0c4128;'>" + layer.feature.properties.Nombre.toString() +  "</h5>"
+    let title = "<h5 style='text-align: center; color: #0c4128;'>" + layer.feature.properties.nombre.toString() +  "</h5>"
     let resumen = "<p style='text-align: justify;'>" + data[0].resumen.toString() +  "</p>"
     let img = "<div style='width: 100%; height: 200px; display: initial;'><img style='filter: saturate(180%); max-height: 275px; display: block; margin: 0 auto;' class='img-thumbnail' src='" +  data[0].path.toString() +"' alt='Monumento a la Bandera'></img></div>";
 
@@ -200,6 +200,8 @@ var layer_nuevapompeya_point = new L.geoJson(nueva_pompeya_point, {
                 return L.marker(latlng, {icon: greenSpaceIcon});
             case 7:
                 return L.marker(latlng, {icon: casaParqueIcon});
+            default:
+                return L.marker(latlng, {icon: parajeIndIcon});
         }
     },
 });

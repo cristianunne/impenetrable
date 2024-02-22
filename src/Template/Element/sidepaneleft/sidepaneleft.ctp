@@ -119,8 +119,8 @@
                         </div>
 
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #198754;">Comandancia Frías</h5>
-                            <p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p>
+                            <h5 class="card-title" style="color: #198754;">Fortin Lavalle</h5>
+                            <p class="card-text">Fortín Lavalle es una localidad argentina situada en el departamento General Güemes de la Provincia del Chaco. Depende administrativamente del municipio de Villa Río Bermejito, de cuyo centro urbano dista unos 10 km. Cuenta con una importante población aborigen.</p>
                             <!-- Funcion de focus map -->
                             <button class="btn btn-success float-right" attr="6" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button>
                         </div>

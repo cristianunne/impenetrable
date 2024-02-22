@@ -24,4 +24,9 @@ class IntegrantesController extends AppController
 
     }
 
+    public function contacto()
+    {
+
+    }
+
 }

@@ -33,6 +33,25 @@ class PuntosInteresTable extends Table
         $this->setTable('puntos_interes');
         $this->setDisplayField('idpuntos_interes');
         $this->setPrimaryKey('idpuntos_interes');
+
+        $this->hasOne('Categorias', [
+            'foreignKey' => 'idcategorias',
+            'bindingKey' => 'categorias_idcategorias', //actual
+            'joinType' => 'INNER'
+        ]);
+
+        $this->hasOne('Tipo', [
+            'foreignKey' => 'idtipo',
+            'bindingKey' => 'tipo_idtipo', //actual
+            'joinType' => 'INNER'
+        ]);
+
+        $this->hasOne('Subtipo', [
+            'foreignKey' => 'idsubtipo',
+            'bindingKey' => 'subtipo_idsubtipo', //actual
+            'joinType' => 'INNER'
+        ]);
+
     }
 
     /**
@@ -64,19 +83,42 @@ class PuntosInteresTable extends Table
 
         $validator
             ->scalar('resumen')
-            ->maxLength('resumen', 300)
+            ->maxLength('resumen', 500)
             ->allowEmptyString('resumen');
-
-        $validator
-            ->scalar('path')
-            ->maxLength('path', 255)
-            ->allowEmptyString('path');
 
         $validator
             ->scalar('name')
             ->maxLength('name', 100)
             ->requirePresence('name', 'create')
             ->notEmptyString('name');
+
+        $validator
+            ->scalar('name_localidad')
+            ->maxLength('name_localidad', 100)
+            ->requirePresence('name_localidad', 'create')
+            ->notEmptyString('name_localidad');
+
+        $validator
+            ->integer('categorias_idcategorias')
+            ->allowEmptyString('categorias_idcategorias');
+
+        $validator
+            ->integer('tipo_idtipo')
+            ->allowEmptyString('tipo_idtipo');
+
+        $validator
+            ->integer('subtipo_idsubtipo')
+            ->allowEmptyString('subtipo_idsubtipo');
+
+        $validator
+            ->scalar('photo')
+            ->maxLength('photo', 255)
+            ->allowEmptyString('photo');
+
+        $validator
+            ->scalar('folder')
+            ->maxLength('folder', 255)
+            ->allowEmptyString('folder');
 
         return $validator;
     }

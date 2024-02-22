@@ -19,8 +19,6 @@ class NovedadesController extends AppController
     }
     public function index()
     {
-        $novedades = $this->paginate($this->Novedades);
-
 
     }
 }

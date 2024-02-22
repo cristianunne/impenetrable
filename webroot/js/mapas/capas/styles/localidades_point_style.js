@@ -1,31 +1,22 @@
 
 
-var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+
 
 function pop_localidades_point(feature) {
 
     let layer = feature.target;
     //console.log(layer);
 
-    var popupContent = '<table>\
+    let popupContent = '<table>\
                     <tr>\
-                        <td colspan="2"><strong><br />' + (layer.feature.properties['name'] !== null ? autolinker.link(layer.feature.properties['name']) : '') + '</strong></td>\
+                        <td colspan="2"><strong><br />' + (layer.feature.properties['name'] !== null ? autolinker.link(layer.feature.properties['name']) : '')
+        + '</strong></td>\
                     </tr>\
                 </table>';
     layer.bindPopup(popupContent, {maxHeight: 400, offset: L.point(5, 67), className: 'popup-impenetrable'}).openPopup();
 }
 
-function closePopup(e)
-{
-    e.target.closePopup();
-}
 
-
-function style_localidades_0_0() {
-    return {
-        interactive: true,
-    }
-}
 
 function zoomToFeature(e) {
     //console.log(e.target.feature.geometry.coordinates);
@@ -33,45 +24,41 @@ function zoomToFeature(e) {
 
     map.flyTo([latlong[1], latlong[0]], 12);
 
-    getDataFromLocalidad(e.target);
+    let data = getDataFromLocalidadId(e.target);
+    data.then((data)=>{
 
-}
-
-
-//TRaigo los datos de esta localidad
-function getDataFromLocalidad(layer)
-{
-
-    let id = layer.feature.properties.fid;
-
-   //Hago la consulta jquery, pero espero el resultado para seguir
-    let url = 'getDataLocalidadById';
-    $.ajax({
-
-        type: "POST",
-        async: true,
-        url: url,
-        data: {'id' : id},
-
-
-        beforeSend: function (xhr) { // Add this line
-            xhr.setRequestHeader('X-CSRF-Token', $('[name="_csrfToken"]').val());
-            //Debo mostrar un loading
-
-        },
-
-    }) .done(function( data ) {
         showLocalidadDescription(data);
-        showPanelInfo();
-    })  .fail(function() {
-        alert( "error" );
-    });
+
+        //showPanelInfo();
+
+    })
+
+
 
 }
+
+function closePopupLocalidades(e)
+{
+    e.target.closePopup();
+}
+
+
+function onEachFeatureLocPoint(feature, layer)
+{
+    layer.on({
+        mouseover: pop_localidades_point,
+        mouseout: closePopupLocalidades,
+        click: zoomToFeature
+    });
+}
+
+
 
 function showLocalidadDescription(data)
 {
     let tab_loc = $("#tab_localidad_description");
+
+    //console.log(data);
 
     tab_loc.empty();
 
@@ -82,33 +69,13 @@ function showLocalidadDescription(data)
 
 function showPanelInfo()
 {
-    $("#mySidepanelLeft").addClass("active")
+
     $("#tab-1").removeClass("active");
-    $("#a-tab1").removeClass("active");
-
-    $("#tab_localidad_description").addClass("active");
-    $("#a-tab2").addClass("active");
+    $("#tab-2").addClass("active");
 }
 
 
-function prueba(e)
-{
-    console.log("pruebaa");
-}
-
-function onEachFeatureLocPoint(feature, layer)
-{
-    layer.on({
-        mouseover: pop_localidades_point,
-        mouseout: closePopup,
-        click: zoomToFeature
-    });
-}
-
-
-
-
-var greenIcon = L.icon({
+var icon_custom = L.icon({
     //iconUrl: '../webroot/img/icons/location.png',
     iconUrl: '../webroot/img/icons/Custom_Locations.png',
     iconSize:     [50, 50], // size of the icon
@@ -118,9 +85,6 @@ var greenIcon = L.icon({
     popupAnchor:  [-3, -76], // point from which the popup should open relative to the iconAnchor
     className: 'animated-icon'
 });
-
-
-
 
 
 
@@ -136,7 +100,6 @@ var layer_localidades_point = new L.geoJson(localidades_point, {
             variables: {}
         };
         //return L.circleMarker(latlng, style_localidades_0_0(feature));
-        return L.marker(latlng, {icon: greenIcon});
+        return L.marker(latlng, {icon: icon_custom});
     },
 });
-

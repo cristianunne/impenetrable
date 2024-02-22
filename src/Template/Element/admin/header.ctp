@@ -82,6 +82,24 @@
                             ['class' => 'dropdown-item']
                         ); ?>
 
+                        <?=  $this->Html->link(
+                            'Categorias',
+                            ['controller' => 'Categorias', 'action' => 'index', '?' => ['Categoria' => 'Mapainteractive', 'Context' => 'Admin']],
+                            ['class' => 'dropdown-item']
+                        ); ?>
+
+                        <?=  $this->Html->link(
+                            'Tipos',
+                            ['controller' => 'Tipo', 'action' => 'index', '?' => ['Categoria' => 'Mapainteractive', 'Context' => 'Admin']],
+                            ['class' => 'dropdown-item']
+                        ); ?>
+
+                        <?=  $this->Html->link(
+                            'Subtipos',
+                            ['controller' => 'Subtipo', 'action' => 'index', '?' => ['Categoria' => 'Mapainteractive', 'Context' => 'Admin']],
+                            ['class' => 'dropdown-item']
+                        ); ?>
+
                     </div>
                 </div>
 

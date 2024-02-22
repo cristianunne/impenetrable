@@ -2,12 +2,12 @@
 <?= $this->Html->css('leaflet/leaflet.css') ?>
 <?= $this->Html->css('mapas/mapas.css') ?>
 
-<?= $this->Html->css('plugins/leaflet-sidepanel.css') ?>
+
 <?= $this->Html->css('plugins/easy-button.css') ?>
 
 <?= $this->Html->script('leaflet/qgis2web_expressions.js') ?>
 <?= $this->Html->script('leaflet/leaflet.js') ?>
-<?= $this->Html->script('dist/leaflet-sidepanel.min.js') ?>
+
 <?= $this->Html->script('dist/easy-button.js') ?>
 
 <?= $this->Html->script('leaflet/leaflet.rotatedMarker.js') ?>
@@ -40,7 +40,7 @@
 
 
 <div id="map">
-    
+
 
 
 </div>
@@ -82,6 +82,7 @@
             closeButton: false,    // whether t add a close button to the panes
             container: 'sidebar', // the DOM container or #ID of a predefined sidebar container that should be used
             position: 'left',     // left or right
+            closeButton: true
 
         }).addTo(map);
 
@@ -90,41 +91,97 @@
         var panelContent = {
             id: 'tab-1',                     // UID, used to access the panel
             tab: '<i class="fa fa-2x"><img src="../img/icon-interest-point.png" alt="alternatetext" width="40px" height="40px"></i>',  // content can be passed as HTML string,
-            pane: '<div class="card"><div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/miraflores_img.jpg" alt="header" width="100%" height="100%" style="filter: saturate(140%);"></div><div class="card-body"><h5 class="card-title" style="color: #198754;">Miraflores</h5><p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p><button class="btn btn-success float-right" attr="1" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div></div><div class="card" style="margin-top: 20px;"><div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/IMG_20220602_111053680_HDR.jpg" alt="header" width="100%" height="100%" style="filter: saturate(180%);"></div><div class="card-body"><h5 class="card-title" style="color: #198754;">Misión Nueva Pompeya</h5><p class="card-text">La localidad de Misión Nueva Pompeya se localiza en el departamento General Güemes de la provincia del Chaco. A unos 185 kilómetros de la ciudad de Castelli y a unos 480 kilómetros de la ciudad de Resistencia.</p> <button class="btn btn-success float-right" attr="2" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div></div><div class="card" style="margin-top: 20px;"><div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/miraflores_img.jpeg" alt="header" width="100%" height="100%"></div><div class="card-body"><h5 class="card-title" style="color: #198754;">Fuerte Esperanza</h5><p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p><!-- Funcion de focus map --><button class="btn btn-success float-right" attr="3" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div></div><div class="card" style="margin-top: 20px;"><div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/el_sauzalito.jpeg" alt="header" width="100%" height="100%" style="filter: saturate(180%);"> </div><div class="card-body"> <h5 class="card-title" style="color: #198754;">El Sauzalito</h5><p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p><!-- Funcion de focus map --><button class="btn btn-success float-right" attr="4" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div></div><div class="card" style="margin-top: 20px;"><div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/rio_bermejito_JPG" alt="header" width="100%" height="100%" style="filter: saturate(180%);"></div><div class="card-body"><h5 class="card-title" style="color: #198754;">Villa Rio Bermejito</h5><p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p><!-- Funcion de focus map --> <button class="btn btn-success float-right" attr="5" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div> </div><div class="card" style="margin-top: 20px;"><div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/miraflores_img.jpeg" alt="header" width="100%" height="100%"></div><div class="card-body"><h5 class="card-title" style="color: #198754;">Comandancia Frías</h5><p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p><!-- Funcion de focus map --><button class="btn btn-success float-right" attr="6" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div></div>',        // DOM elements can be passed, too
+            pane: '<div class="card">' +
+                '<div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/miraflores.png" alt="header" width="100%" height="100%" style="filter: saturate(140%);"></div>' +
+                '<div class="card-body"><h5 class="card-title" style="color: #198754;">Miraflores</h5>' +
+                '\<p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p>' +
+                '<button class="btn btn-success float-right" attr="1" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button>' +
+                '</div></div>' +
+                '<div class="card" style="margin-top: 20px;">' +
+                '<div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/nueva_pompeya.png" alt="header" width="100%" height="100%" style="filter: saturate(140%);"></div>' +
+                '<div class="card-body"><h5 class="card-title" style="color: #198754;">Misión Nueva Pompeya</h5>' +
+                '\<p class="card-text">Se localiza en el departamento General Güemes a unos 480 kilómetros de la ciudad de Resistencia.</p>' +
+                '<button class="btn btn-success float-right" attr="2" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button>' +
+                '</div></div>' +
+                '<div class="card" style="margin-top: 20px;">' +
+                '<div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/comandancia.png" alt="header" width="100%" height="100%" style="filter: saturate(140%);"></div>' +
+                '<div class="card-body"><h5 class="card-title" style="color: #198754;">Comandancia Frias</h5>' +
+                '\<p class="card-text">Comandancia Frías es una localidad argentina situada en el extremo norte de la Provincia del Chaco, en el departamento General Güemes..</p>' +
+                '<button class="btn btn-success float-right" attr="3" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button>' +
+                '</div></div>' +
+                '<div class="card" style="margin-top: 20px;">' +
+                '<div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/fuerte_esperanza.png" ' +
+                'alt="header" width="100%" height="100%"></div>' +
+
+                '<div class="card-body"><h5 class="card-title" style="color: #198754;">Fuerte Esperanza</h5>' +
+                '<p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p><!-- Funcion de focus map -->' +
+                '<button class="btn btn-success float-right" attr="7" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div></div>' +
+
+                '<div class="card" style="margin-top: 20px;"><div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/elsauzalito.png" alt="header" width="100%" height="100%" style="filter: saturate(180%);"> </div>' +
+                '<div class="card-body"> <h5 class="card-title" style="color: #198754;">El Sauzalito</h5><p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p><!-- Funcion de focus map --><button class="btn btn-success float-right" attr="4" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div></div>' +
+                '<div class="card" style="margin-top: 20px;"><div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/vrbermejito.png" alt="header" width="100%" height="100%" style="filter: saturate(180%);"></div><div class="card-body"><h5 class="card-title" style="color: #198754;">Villa Rio Bermejito</h5><p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p><!-- Funcion de focus map --> <button class="btn btn-success float-right" attr="5" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div> </div>' +
+                '<div class="card" style="margin-top: 20px;"><div class="bd-placeholder-img card-img-top">' +
+                '<img class="img-header-card" src="../img/header_loc/fortin_lavalle.png" alt="header" width="100%" height="100%"></div>' +
+                '<div class="card-body"><h5 class="card-title" style="color: #198754;">Fortin Lavalle</h5>' +
+                '<p class="card-text">Fortín Lavalle es una localidad argentina situada en el departamento General Güemes de la Provincia del Chaco. Depende administrativamente del municipio de Villa Río Bermejito, de cuyo centro urbano dista unos 10 km. Cuenta con una importante población aborigen.</p><!-- Funcion de focus map -->' +
+                '<button class="btn btn-success float-right" attr="6" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div>' +
+                '</div>',        // DOM elements can be passed, too
             title: 'Lugares',              // an optional pane header
             position: 'top',                  // optional vertical alignment, defaults to 'top'
-            closeButton: false
+            closeButton: false,
         };
         sidebar.addPanel(panelContent);
 
-        var panelContent = {
+        var panelContent2 = {
             id: 'tab-2',                     // UID, used to access the panel
             tab: '<i class="fa fa-2x"><img src="../img/icon-2.png" alt="alternatetext" width="40px" height="40px"></i>',  // content can be passed as HTML string,
-            pane: '<div><h2 style="color: #198754;"><strong>Miraflores:</strong></h2><p style="text-align:justify">En 1910 se estableció un grupo de colonos provenientes de la provincia de Salta, siguiendo el curso del Río Bermejo. En 1919, y especialmente en 1923 se realizó una campaña para desarrollar el cultivo del algodón en el Chaco, lo que atrajo a inmigrantes europeos a la zona.</p><p style="text-align:justify">En el año 1931 la Ley Nacional N° 5.730 declaró el territorio como “Villa Rural Indígena” nueve años después, el 5 de octubre de 1940 la Ley N° 73.346 lo denominó con el nombre de “Miraflores”. En ese entonces el departamento se llamaba “Río Teuco” y el territorio del “Chaco” formaba parte del Territorio Nacional, Chaco aún no era una provincia.</p><p style="text-align:justify">La denominación de su nombre corresponde, según relatos de los primeros pobladores, a que en aquel tiempo era todo descampado, no había monte, abundaban las praderas con flores silvestres, especialmente las científicamente llamadas Varbenas.</p><p style="text-align:justify">Los pueblos originarios relatan otras historias sobre el sentido del nombre, siempre teniendo como protagonistas a las flores silvestres. Estas abundaban alrededor de una represa donde los hombres mariscaban, pasaban horas esperando que lleguen animales a la aguada y cuando alguien preguntaba qué estaban haciendo, ellos respondían "Mirando las Flores".&nbsp;</p><p style="text-align:justify">El Gobernador Rolando José Tauguinas creó el municipio de tercera categoría en 1992, y se nombró delegado organizador a Antonio Prieto. El edificio del centro cívico se utilizó como sede municipal.</p><p style="text-align:justify">&nbsp;</p><p style="text-align:justify"><strong>Localización:</strong></p><table border="0" cellpadding="1" cellspacing="1"><tbody><tr><td><img alt="" src="../img/icons/mapa.png" style="height:48px; width:48px"></td><td><span style="font-size:11pt"><span style="font-family:"Times New Roman"><span style="color:#000000">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</span></span></span></td></tr></tbody></table><p style="text-align:justify">&nbsp;</p><p style="text-align:justify">&nbsp; &nbsp; &nbsp;</p><p style="text-align:justify">&nbsp;</p></div>', // DOM elements can be passed, too
+            pane: '<div id="tab_localidad_description"></div>', // DOM elements can be passed, too
             title: 'Descripción',              // an optional pane header
             position: 'top',                  // optional vertical alignment, defaults to 'top'
             closeButton: false
         };
-        sidebar.addPanel(panelContent);
+        sidebar.addPanel(panelContent2);
 
-        var panelContent = {
+        var panelContent3 = {
             id: 'tab_POI',                     // UID, used to access the panel
             tab: '<i class="fa fa-2x"><img src="../img/icon-list-places.png" alt="alternatetext" width="40px" height="40px"></i>',  // content can be passed as HTML string,
-            pane: '<div></div>', // DOM elements can be passed, too
+            pane: '<div></div>',
             title: 'Puntos de interés',              // an optional pane header
             position: 'top',                  // optional vertical alignment, defaults to 'top'
             closeButton: false
         };
-        sidebar.addPanel(panelContent);
+        sidebar.addPanel(panelContent3);
 
-        /* add an external link 
+        sidebar.addPanel({
+            id: 'ghlink',
+            tab: '<i class="fas fa-close"></i>',
+            button: function (event) {
+                let elemento = document.getElementById('sidebar');
+                elemento.classList.add('collapsed');
+                elemento.classList.add('top-90');
+
+            },
+        });
+
+        /*
+
+        '<div class="card" style="margin-top: 20px;">' +
+                '<div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/IMG_20220602_111053680_HDR.jpg" alt="header" width="100%" height="100%" style="filter: saturate(180%);"></div>' +
+                '<div class="card-body"><h5 class="card-title" style="color: #198754;">Misión Nueva Pompeya</h5>' +
+                '<p class="card-text">La localidad de Misión Nueva Pompeya se localiza en el departamento General Güemes a unos 185 kilómetros de la ciudad de Castelli y a unos 480 kilómetros de la ciudad de Resistencia.</p> ' +
+                '<button class="btn btn-success float-right" attr="2" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div></div>' +
+
+         */
+
+
+        /* add an external link
         sidebar.addPanel({
             id: 'ghlink',
             tab: '<i class="fa fa-github"></i>',
             button: 'https://github.com/noerw/leaflet-sidebar-v2',
         });*/
 
-        /* add a button with click listener 
+        /* add a button with click listener
         sidebar.addPanel({
             id: 'click',
             tab: '<i class="fa fa-info"></i>',
@@ -139,7 +196,7 @@
                 disabled: false,
             });*/
 
-        sidebar.on('content', function (ev) {
+        /*sidebar.on('content', function (ev) {
             switch (ev.id) {
                 case 'autopan':
                 sidebar.options.autopan = true;
@@ -147,23 +204,37 @@
                 default:
                 sidebar.options.autopan = false;
             }
-        });
+        });*/
 
 </script>
+
+<?= $this->Html->script('impenetrable.js') ?>
+<?= $this->Html->script('mapas/baselayers.js') ?>
+<?= $this->Html->script('mapas/querys_capas.js') ?>
+<?= $this->Html->script('mapas/styles/icons_styles.js') ?>
+<?= $this->Html->script('mapas/clases/LayersPOIClass.js') ?>
+
 
 
 
 <?= $this->Html->script('mapas/capas/inicio/PN_limite_Project_1.js') ?>
 <?= $this->Html->script('mapas/capas/interactive/localidades_point.js') ?>
-<?= $this->Html->script('mapas/capas/interactive/miraflores.js') ?>
+
 <?= $this->Html->script('mapas/capas/interactive/nueva_pompeya.js') ?>
+<?= $this->Html->script('mapas/capas/interactive/miraflores.js') ?>
+<?= $this->Html->script('mapas/capas/interactive/comandancia_frias.js') ?>
+<?= $this->Html->script('mapas/capas/interactive/el_sauzalito.js') ?>
+<?= $this->Html->script('mapas/capas/interactive/villa_rio_bermejito.js') ?>
+<?= $this->Html->script('mapas/capas/interactive/fortin_lavalle.js') ?>
 
 <?= $this->Html->script('mapas/capas/styles/reserva_impenetrable.js') ?>
 <?= $this->Html->script('mapas/capas/styles/localidades_point_style.js') ?>
-<?= $this->Html->script('mapas/capas/styles/miraflores_point_style.js') ?>
-<?= $this->Html->script('mapas/capas/styles/nuevapompeya_point_style.js') ?>
+<?= $this->Html->script('mapas/capas/styles/villa_rio_bermejito_point_style.js') ?>
+<?= $this->Html->script('mapas/capas/styles/fortin_lavalle_point_style.js') ?>
+<?= $this->Html->script('mapas/capas/styles/comandancia_frias_point_style.js') ?>
+<?= $this->Html->script('mapas/capas/styles/el_sauzalito_point_style.js') ?>
 
-<?= $this->Html->script('mapas/interactive-maps.js') ?>
+<?= $this->Html->script('mapas/initialize_maps.js') ?>
 
 
 

@@ -27,9 +27,9 @@
                             ['class' => 'dropdown-item']);
                         ?>
 
-                        <a href="testimonial.html" class="dropdown-item">Fundamentación</a>
-                        <a href="team.html" class="dropdown-item">Lineas de Investigación</a>
-                        <a href="testimonial.html" class="dropdown-item">Fuentes</a>
+                        <a href="#" class="dropdown-item">Fundamentación</a>
+                        <a href="#" class="dropdown-item">Lineas de Investigación</a>
+                        <a href="#" class="dropdown-item">Fuentes</a>
 
                         <?=  $this->Html->link(
                             'Integrantes',
@@ -49,7 +49,7 @@
                 ?>
 
                 <?=  $this->Html->link(
-                    'Novedades',
+                    'Artesanos y Productos',
                     ['controller' => 'Novedades', 'action' => 'index', '?' => ['Categoria' => 'Integrantes']],
                     ['class' => 'dnav-item nav-link', 'id' => "li_Novedades"]
                 );
@@ -68,7 +68,13 @@
                     ['class' => 'dnav-item nav-link', 'id' => "li_Cartography"]
                 );
                 ?>
-                <a href="contact.html" class="nav-item nav-link">Contacto</a>
+
+                <?=  $this->Html->link(
+                    'Contacto',
+                    ['controller' => 'Integrantes', 'action' => 'contacto', '?' => ['Categoria' => 'Integrantes']],
+                    ['class' => 'dnav-item nav-link', 'id' => "li_Contacto"]
+                );
+                ?>
             </div>
         </div>
     </nav>

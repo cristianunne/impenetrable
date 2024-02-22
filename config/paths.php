@@ -93,3 +93,12 @@ define('IMG',  ROOT . DS . 'webroot' . DS  . 'img' . DS);
 define('SLIDER',  IMG . 'slider' . DS);
 
 define('DOCS_FILES',  ROOT . DS . 'webroot' . DS . 'docs_files' . DS);
+
+
+define('LOGOS', IMG . 'logos'. DS);
+define('LOGOS_SHORT', 'webroot' . DS .'img'. DS . 'logos'. DS);
+
+define('FOTOS', IMG . 'fotos'. DS);
+define('FOTOS_SHORT', 'webroot' . DS .'img'. DS . 'fotos'. DS);
+
+define('UTILITY', APP . 'Utility');

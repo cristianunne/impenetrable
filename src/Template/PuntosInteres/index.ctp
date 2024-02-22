@@ -35,7 +35,7 @@
                             <th scope="col"><?= $this->Paginator->sort('Id Punto') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Resumen') ?></th>
                             <th scope="col"><?= $this->Paginator->sort('Id localidad icon') ?></th>
-                            <th scope="col"><?= $this->Paginator->sort('path') ?></th>
+                            <th scope="col"><?= $this->Paginator->sort('Imagen') ?></th>
                             <th scope="col" class="actions"><?= __('Acciones') ?></th>
 
                         </tr>
@@ -48,7 +48,7 @@
                                 <td><?= h($loc->id_punto) ?></td>
                                 <td><?= h($loc->resumen) ?></td>
                                 <td><?= h($loc->localidad) ?></td>
-                                <td><?= h($loc->path) ?></td>
+                                <td><?= $this->Html->image('fotos/'.$loc->photo, ['height' => '90', 'width' => '90']); ?></td>
                                 <td class="actions">
                                     <div class="col-sm-12" style="margin-bottom: 5px;">
                                         <?= $this->Html->link(__('Editar'), ['action' => 'edit','?' =>
