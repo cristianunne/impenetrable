@@ -1,12 +1,31 @@
 <?= $this->element('header')?>
 
+<div class="container-xxl mb-5">
+
+        <div class="row py-5 landing-inte-back">
+            <div class="col-xs-5 col-md-5 col-lg-5 valign-center" style="text-align: center; display:table">
+                <h1 class="title-hover wow zoomIn" style="vertical-align: middle; color: #198754; margin-top: 30%;">
+                    Cartografía
+                </h1>
+
+                <p class="wow zoomIn" style="vertical-align: middle; color: #198754;">
+                    Podés acceder al Mapa Interactivo o al centro de Descargas.
+                </p>
+
+            </div>
+            <div class="col-xs-7 col-md-7 col-lg-7 valign-center">
+                <?=  $this->Html->image('cartografia.svg', ['alt' => 'cartografia', 'class' => 'img-fluid img-landing-int wow zoomIn']); ?>
+            </div>
+        </div>
+
+    </div>
 <!-- Service Start -->
 <div class="container-xxl py-5">
     <div class="container px-lg-5">
-        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+        <!--<div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
             <h6 class="position-relative d-inline text-success ps-4">Cartografía</h6>
             <h2 class="mt-2">Podés acceder al Mapa Interactivo o al centro de Descargas</h2>
-        </div>
+        </div>-->
         <div class="row g-4">
             <div class="col-lg-6 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                 <div class="service-item d-flex flex-column justify-content-center text-center rounded">

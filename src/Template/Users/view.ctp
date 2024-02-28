@@ -13,16 +13,23 @@
 
     <div class="row padding-10 py-5">
         <div class="col-lg-12">
-            <div class="box">
-                <div class="box-header">
+            <div class="box landing-inte-back">
+                <?=  $this->Html->image('usuarios.svg', ['alt' => 'Usuarios', 'class' => 'img-fluid img-landing-box wow zoomIn']); ?>
+            </div>
                     <div class="row">
                         <div class="col-sm-6">
                             <h3 class="box-title" style="color: rgb(0 38 6 / 96.3%);">Usuarios registrados</h3>
                         </div>
                         <div class="col-sm-6">
-                            <?= $this->Html->link('<i class="fa fa-plus"></i> Nuevo', ['action' => 'register','?' =>
-                                ['Accion' => 'Editar Usuarios', 'Categoria' => 'Usuarios']],
-                                ['class' => 'btn btn-success float-right', 'escape' => false]) ?>
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="justify-content: flex-end !important;">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                <?= $this->Html->link('<i class="fa fa-plus"></i> Nuevo', ['action' => 'register','?' =>
+                                    ['Accion' => 'Editar Usuarios', 'Categoria' => 'Usuarios']],
+                                    ['class' => 'btn btn-success float-right', 'escape' => false]) ?>
+                                <?= $this->Html->link('Cancelar <i class="fa fa-times"></i>', ['controller' => 'admin', 'action' => 'index'],
+                                    ['class' => 'btn btn-secondary float-right', 'escape' => false]) ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

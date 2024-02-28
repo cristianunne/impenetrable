@@ -9,9 +9,10 @@
     <div class="row padding-10 py-5">
         <?= $this->Form->create($puntosIntere,  ['enctype' => 'multipart/form-data']) ?>
         <div class="col-lg-7 center-div">
-            <div class="box">
+            <div class="box landing-inte-back">
+                <?=  $this->Html->image('punto_interes.svg', ['alt' => 'Punto de interés', 'class' => 'img-fluid img-landing-box wow zoomIn']); ?>
                 <div class="box-header">
-                    <h5 class="box-title" style="color: rgb(0 38 6 / 96.3%);">Detalles del Punto de Interes</h5>
+                    <h5 class="box-title" style="color: rgb(0 38 6 / 96.3%);">Nuevo Punto de Interes</h5>
                 </div>
 
                 <div class="box-body">
@@ -96,9 +97,13 @@
                         <input type="file" name="file" class="jfilestyle" data-inputSize="403px !important" accept="image/*">
                     </div>
 
-                    <div class="form-group m-0">
-                        <?= $this->Form->button('Guardar', ['class' => 'btn btn-large btn-success float-right',
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="justify-content: flex-end !important;">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <?=  $this->Html->link('Cancelar', ['controller' => 'PuntosInteres', 'action' => 'index', '?' => ['Categoria' => 'Mapainteractive', 'Context' => 'Admin']],
+                                ['class' => 'btn btn-secondary float-right', 'escape' => false]); ?>
+                            <?= $this->Form->button('Guardar', ['class' => 'btn btn-large btn-success float-right',
                             'id' => 'boton_submit']) ?>
+                        </div>
                     </div>
                     </br>
 

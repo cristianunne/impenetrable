@@ -21,7 +21,7 @@
 
             </div>
             <div class="col-xs-7 col-md-7 col-lg-7 valign-center">
-                <?=  $this->Html->image('cientifico.svg', ['alt' => 'CakePHP', 'class' => 'img-fluid img-landing-int wow zoomIn']); ?>
+                <?=  $this->Html->image('equipo.svg', ['alt' => 'Integrantes', 'class' => 'img-fluid img-landing-int wow zoomIn']); ?>
             </div>
         </div>
 

@@ -10,16 +10,24 @@
 
     <div class="row padding-10 py-5">
         <div class="col-lg-6 mx-auto">
-            <div class="box">
+            <div class="box landing-inte-back">
+                <?=  $this->Html->image('categoria.svg', ['alt' => 'Categoría', 'class' => 'img-fluid img-landing-box wow zoomIn']); ?>
+            </div>
                 <div class="box-header">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h3 class="box-title" style="color: rgb(0 38 6 / 96.3%);">Categorias</h3>
+                            <h3 class="box-title" style="color: rgb(0 38 6 / 96.3%);">Categorias registradas</h3>
                         </div>
                         <div class="col-sm-6">
-                            <?= $this->Html->link('<i class="fa fa-plus"></i> Nuevo', ['action' => 'add','?' =>
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="justify-content: flex-end !important;">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                <?= $this->Html->link('<i class="fa fa-plus"></i> Nuevo', ['action' => 'add','?' =>
                                 ['Accion' => 'Agregar Tipo', 'Categoria' => 'Mapainteractive']],
                                 ['class' => 'btn btn-success float-right', 'escape' => false]) ?>
+                                <?= $this->Html->link('Cancelar <i class="fa fa-times"></i>', ['controller' => 'admin', 'action' => 'index'],
+                                    ['class' => 'btn btn-secondary float-right', 'escape' => false]) ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

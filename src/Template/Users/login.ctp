@@ -9,9 +9,7 @@
 
         <div class="row justify-content-md-center h-100">
             <div class="card-wrapper wow zoomIn">
-                <div class="brand">
-                    <img src="../img/integrantes/user_hombre.png" alt="logo">
-                </div>
+            <?= $this->Html->image('logo-impenetrable.png',array('alt' => 'logo', 'class' => 'w-100 p-3')); ?>
 
                 <div class="card fat">
                     <div class="card-body">
@@ -42,9 +40,7 @@
 
                 </div>
 
-                <div class="footer">
-                    Copyright &copy; 2022 &mdash; Instituto de Investigaciones Geohistóricas (IIGHI)
-                </div>
+
             </div>
         </div>
     </div>

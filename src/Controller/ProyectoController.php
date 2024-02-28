@@ -29,4 +29,9 @@ class ProyectoController extends AppController
 
     }
 
+    public function metodologia()
+    {
+
+    }
+
 }

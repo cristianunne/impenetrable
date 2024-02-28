@@ -1,10 +1,33 @@
 <?= $this->element('header')?>
 
+<section class="h-100" style="background-color: #ffffff; padding-bottom: 100px;">
 
+    <div class="container-xxl mb-5">
+
+        <div class="row py-5 landing-inte-back">
+            <div class="col-xs-5 col-md-5 col-lg-5 valign-center" style="text-align: center; display:table">
+                <h1 class="title-hover wow zoomIn" style="vertical-align: middle; color: #198754; margin-top: 30%;">
+                    Objetivos
+                </h1>
+
+                <p class="wow zoomIn" style="vertical-align: middle; color: #198754;">
+                    Te contamos lo qué nos propusimos.
+                </p>
+
+            </div>
+            <div class="col-xs-7 col-md-7 col-lg-7 valign-center">
+                <?=  $this->Html->image('objetivo.svg', ['alt' => 'Objetivo', 'class' => 'img-fluid img-landing-int wow zoomIn']); ?>
+            </div>
+        </div>
+
+    </div>
 <div class="container-xxl container-background-lightgray padding-15 py-5">
 
         <div class="row g-4 bs-white font-size-18 padding-20">
             <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                <!--<div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <h2 class="mt-2 text-success">Objetivos</h2>
+                </div>-->
 
                 <h5 class="mb-3 text-title">Objetivo General e Impacto</h5>
 
@@ -102,3 +125,4 @@
 
 
 </div>
+</section>

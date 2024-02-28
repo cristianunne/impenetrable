@@ -8,7 +8,8 @@
     <div class="row padding-10 py-5">
         <?= $this->Form->create($timeline) ?>
             <div class="col-lg-5 center-div">
-                <div class="box">
+                <div class="box landing-inte-back">
+                <?=  $this->Html->image('eventos.svg', ['alt' => 'Eventos', 'class' => 'img-fluid img-landing-box wow zoomIn']); ?>
                     <div class="box-header">
                         <h5 class="box-title" style="color: rgb(0 38 6 / 96.3%);">Agregar nuevo evento</h5>
                     </div>
@@ -34,9 +35,13 @@
                                 'placeholder' => '', 'required', 'id' => 'textarea']) ?>
                         </div>
                         </br>
-                        <div class="form-group m-0">
-                            <?= $this->Form->button('Guardar', ['class' => 'btn btn-large btn-success float-right',
+                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="justify-content: flex-end !important;">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <?= $this->Html->link('Cancelar', ['controller' => 'Timeline', 'action' => 'index', 'Categoria' => 'Timeline', 'Context' => 'Admin'],
+                                    ['class' => 'btn btn-secondary float-right', 'escape' => false]) ?>
+                                <?= $this->Form->button('Guardar', ['class' => 'btn btn-large btn-success float-right',
                                 'id' => 'boton_submit']) ?>
+                            </div>
                         </div>
                         </br>
 

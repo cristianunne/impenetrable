@@ -3,15 +3,20 @@
 
 <header class="main-header">
     <nav class="navbar navbar-expand-lg navbar-light navbar-impenetrable px-4 px-lg-5 py-3 py-lg-0 nav-backgorund">
-        <a href="/impenetrable" class="navbar-brand p-0">
+
             <!-- <h1 class="m-0"><i class="fa fa-tree me-2"></i><span class="fs-5">EL IMPENETRABLE</span></h1>-->
-            <!-- <img id="logo" src="../img/logo-impenetrable-blanco.png" alt="Logo">-->
-            <?=
-                $this->Html->image('logo-impenetrable-blanco.png', ['id' => 'logo']);
-            ?>
+           
+<?=  
+$this->Html->link(
+    $this->Html->image('logo-impenetrable-blanco.png',array('id' => 'logo')),
+    array(
+        'controller' => 'Index', 
+        'action' => 'index'
+    ), array('class' => 'navbar-brand p-0', 'escape' => false)
+);
+                        ?>
 
 
-        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
         </button>
@@ -27,9 +32,21 @@
                             ['class' => 'dropdown-item']);
                         ?>
 
-                        <a href="#" class="dropdown-item">Fundamentación</a>
-                        <a href="#" class="dropdown-item">Lineas de Investigación</a>
-                        <a href="#" class="dropdown-item">Fuentes</a>
+                        <?=  $this->Html->link(
+                            'Metodología',
+                            ['controller' => 'Proyecto', 'action' => 'metodologia', '?' => ['Categoria' => 'Proyecto']],
+                            ['class' => 'dropdown-item']);
+                        ?>
+
+                        <!--<a href="testimonial.html" class="dropdown-item">Fundamentación</a>
+                        <a href="team.html" class="dropdown-item">Lineas de Investigación</a>
+                        <a href="testimonial.html" class="dropdown-item">Fuentes</a>-->
+                        <!--<?=  $this->Html->link(
+                            'Fuentes',
+                            ['controller' => 'Fuentes', 'action' => 'index', '?' => ['Categoria' => 'Fuentes']],
+                            ['class' => 'dropdown-item']
+                             );
+                        ?>-->
 
                         <?=  $this->Html->link(
                             'Integrantes',
@@ -49,7 +66,7 @@
                 ?>
 
                 <?=  $this->Html->link(
-                    'Artesanos y Productos',
+                    'Artesanos, Productos y Servicios',
                     ['controller' => 'Novedades', 'action' => 'index', '?' => ['Categoria' => 'Integrantes']],
                     ['class' => 'dnav-item nav-link', 'id' => "li_Novedades"]
                 );
@@ -68,11 +85,11 @@
                     ['class' => 'dnav-item nav-link', 'id' => "li_Cartography"]
                 );
                 ?>
-
+                <!--<a href="contact.html" class="nav-item nav-link">Contacto</a>-->
                 <?=  $this->Html->link(
                     'Contacto',
-                    ['controller' => 'Integrantes', 'action' => 'contacto', '?' => ['Categoria' => 'Integrantes']],
-                    ['class' => 'dnav-item nav-link', 'id' => "li_Contacto"]
+                    ['controller' => 'Contact', 'action' => 'index', '?' => ['Categoria' => 'Contact']],
+                    ['class' => 'dnav-item nav-link', 'id' => 'li_Contact']
                 );
                 ?>
             </div>
@@ -82,20 +99,20 @@
         $(function(){
         $(document).scroll(function(){
             if($(this).scrollTop() > 1) {
-                $('#logo').attr('src','/impenetrable/img/logo-impenetrable.png')
+                $('#logo').attr('src','img/logo-impenetrable.png')
             }
             if($(this).scrollTop() < 1) {
-             $('#logo').attr('src','/impenetrable/img/logo-impenetrable-blanco.png');
+             $('#logo').attr('src','img/logo-impenetrable-blanco.png');
             }
         });
     });
     $(function(){
     $(window).on("resize", function(){
           if($(window).width() < 992){
-              $('#logo').attr("src","/impenetrable/img/logo-impenetrable.png");
+              $('#logo').attr("src","img/logo-impenetrable.png");
           }
           else{
-              $('#logo').attr("src","/impenetrable/img/logo-impenetrable-blanco.png");
+              $('#logo').attr("src","img/logo-impenetrable-blanco.png");
           }
         })
     });

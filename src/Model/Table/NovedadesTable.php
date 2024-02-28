@@ -47,7 +47,7 @@ class NovedadesTable extends Table
      */
     public function validationDefault(Validator $validator)
     {
-        $validator
+        /*$validator
             ->integer('idnovedades')
             ->allowEmptyString('idnovedades', null, 'create');
 
@@ -70,6 +70,69 @@ class NovedadesTable extends Table
             ->scalar('folder')
             ->maxLength('folder', 255)
             ->allowEmptyString('folder');
+
+        return $validator;*/
+        $validator
+            ->integer('idnovedades')
+            ->allowEmptyString('idnovedades', null, 'create');
+
+        $validator
+            ->scalar('nombre')
+            ->maxLength('nombre', 150)
+            ->requirePresence('nombre', 'create')
+            ->notEmptyString('nombre');
+
+        $validator
+            ->scalar('producto')
+            ->maxLength('producto', 255)
+            ->requirePresence('producto', 'create')
+            ->notEmptyString('producto');
+
+        $validator
+            ->scalar('direccion')
+            ->maxLength('direccion', 255)
+            ->allowEmptyString('direccion');
+
+        $validator
+            ->scalar('telefono')
+            ->maxLength('telefono', 15)
+            ->allowEmptyString('telefono');
+
+        $validator
+            ->scalar('email')
+            ->maxLength('email', 255)
+            ->allowEmptyString('email');
+
+        $validator
+            ->scalar('instagram')
+            ->maxLength('instagram', 255)
+            ->allowEmptyString('instagram');
+
+        $validator
+            ->scalar('facebook')
+            ->maxLength('facebook', 255)
+            ->allowEmptyString('facebook');
+        
+        $validator
+            ->scalar('web')
+            ->maxLength('web', 255)
+            ->allowEmptyString('web');
+
+        $validator
+            ->scalar('foto_dir')
+            ->maxLength('foto_dir', 255)
+            ->allowEmptyString('foto_dir');
+
+        $validator
+            ->scalar('localidad')
+            ->maxLength('localidad', 100)
+            ->allowEmptyString('localidad');
+
+        $validator
+            ->scalar('color')
+            ->maxLength('color', 6)
+            ->allowEmptyString('color');
+
 
         return $validator;
     }

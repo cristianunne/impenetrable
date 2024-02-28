@@ -70,12 +70,13 @@
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
+        autoplay: false,
         smartSpeed: 1000,
         margin: 25,
         dots: false,
         loop: true,
         center: true,
+        autoWidth: true,
         responsive: {
             0:{
                 items:1
@@ -156,3 +157,29 @@ $(function() {
 
 
 
+jQuery(document).ready(function($) {
+"use strict";
+//  TESTIMONIALS CAROUSEL HOOK
+$('#customers-testimonials').owlCarousel({
+    loop: true,
+    items: 3,
+    margin: 0,
+    autoplay: true,
+    dots:false,
+    nav:true,
+    autoplayTimeout: 3500,
+    smartSpeed: 450,
+  navText: ['<i class="fa fa-angle-left fa-5x"></i>','<i class="fa fa-angle-right fa-5x"></i>'],
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      1170: {
+        items: 1
+      }
+    }
+  });
+});

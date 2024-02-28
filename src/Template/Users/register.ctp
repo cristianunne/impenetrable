@@ -12,9 +12,9 @@
 
         <div class="row justify-content-md-center h-100">
             <div class="card-wrapper wow zoomIn">
-                <div class="brand">
-                    <img src="../img/integrantes/user_hombre" alt="logo">
-                </div>
+                <div class="box landing-inte-back">
+                <?=  $this->Html->image('usuarios.svg', ['alt' => 'Usuarios', 'class' => 'img-fluid img-landing-box wow zoomIn']); ?>
+
 
                 <div class="card fat">
                     <div class="card-body">
@@ -51,11 +51,14 @@
                                 'id' => 'pass_2']) ?>
                         </div>
 
-                            <div class="form-group m-0">
-                                <?= $this->Form->button('Registrarse', ['class' => 'btn btn-large btn-success btn-block', 'disabled' => 'disabled',
+                            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="justify-content: flex-end !important;">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <?= $this->Html->link('Cancelar', ['controller' => 'admin', 'action' => 'index'], ['class' => 'btn btn-secondary']) ?>
+                                    <?= $this->Form->button('Registrarse', ['class' => 'btn btn-success', 'disabled' => 'disabled',
                                     'id' => 'boton_submit']) ?>
+                                    <?= $this->Form->end() ?>
+                                </div>
                             </div>
-                            <?= $this->Form->end() ?>
 
                     </div>
 

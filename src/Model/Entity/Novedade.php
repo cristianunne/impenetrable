@@ -25,10 +25,16 @@ class Novedade extends Entity
      * @var array
      */
     protected $_accessible = [
-        'tittle' => true,
-        'content' => true,
-        'created' => true,
-        'category' => true,
-        'folder' => true,
+        'nombre' => true,
+        'producto' => true,
+        'direccion' => true,
+        'telefono' => true,
+        'email' => true,
+        'instagram' => true,
+        'facebook' => true,
+        'web' => true,
+        'foto_dir' => true,
+        'localidad' => true,
+        'color' => true,
     ];
 }
