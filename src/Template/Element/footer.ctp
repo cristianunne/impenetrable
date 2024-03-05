@@ -4,7 +4,9 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                     <div class="logo-widget footer-widget">
-                        <figure class="footer-logo text-center"><a href="https://iighi.conicet.gov.ar" target="_blank"><img src="img/footer-logo.png" alt="logo"></a></figure>
+                        
+                        <figure class="footer-logo text-center"><a href="https://iighi.conicet.gov.ar" target="_blank">
+                                <?php echo $this->Html->image('footer-logo.png', ["alt" => 'IIGHI logo']) ?></a></figure>
                         <div class="text">Instituto de Investigaciones Geohistóricas (IIGHI)<br><small>Consejo Nacional de Investigaciones Científicas y Técnicas- Universidad Nacional del Nordeste</small></div>
                         <ul id="icons-media" class="footer-social clearfix">
                             <li><a href="https://www.facebook.com/IIGHIChaco/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
@@ -50,10 +52,21 @@
                             <div class="text"><i class="fa fa-calendar"></i>11 de Junio de 2023</div>
                         </div>
                         <div class="single-event">
-                            <div class="link">5to Viaje de Campaña: <em>Villa Río Bermejito, Fortín Lavalle</em></div>
+                            <div class="link">5to Viaje de Campaña: <em>Villa Río Bermejito, Fortín Lavalle y El Sauzalito</em></div>
                             <div class="text"><i class="fa fa-calendar"></i>6 de Julio de 2023</div>
                         </div>
-
+                        <div class="single-event">
+                            <div class="link">6to Viaje de Campaña: <em>Nueva Pompeya y parajes</em></div>
+                            <div class="text"><i class="fa fa-calendar"></i>3 de Agosto de 2023</div>
+                        </div>
+                        <div class="single-event">
+                            <div class="link">7mo Viaje de Campaña: <em>7mo Viaje de Campaña: Miraflores</em></div>
+                            <div class="text"><i class="fa fa-calendar"></i>20 de Febrero de 2024</div>
+                        </div>
+                        <div class="single-event">
+                            <div class="link">8vo Viaje de Campaña: <em>Juan José Castelli y alrededores</em></div>
+                            <div class="text"><i class="fa fa-calendar"></i>26 de Febrero de 2024</div>
+                        </div>
                     </div>
                 </div>
 
@@ -64,13 +77,7 @@
                         <div class="text">Proyecto de Investigación financiado por la Agencia Nacional de Promoción de la Investigación, el Desarrollo Tecnológico y la Innovación<br><small>(PICT0: UNNE-2019-00028)</small></div>
                         <figure class="footer-logo-2"><a href="https://www.argentina.gob.ar/ciencia/cofecyt" target="_blank">
                                 <?php echo $this->Html->image('iso-cofecyt.png', ["alt" => 'cofecyt', "height" => '60']) ?></a></figure>
-                        <div class="text">Proyecto de Investigación financiado poe el Consejo Federal de Ciencia, Tecnología e Innovación<br><small>(Código)</small></div>
-                        <!--<figure class="footer-logo-2"><a href="https://www.argentina.gob.ar/ciencia" target="_blank">
-                                <?php echo $this->Html->image('ministerio_2020_blanco.png', ["alt" => '']) ?>
-                                </a></figure>
-                        <figure class="footer-logo-2"><a href="https://www.conicet.gov.ar" target="_blank">
-                                <?php echo $this->Html->image('logo-CONICET_blanco.png', ["alt" => '']) ?>
-                                </a></figure>-->
+                        <div class="text">Proyecto de Investigación financiado poe el Consejo Federal de Ciencia, Tecnología e Innovación<br><small>(CH-10- PFI-2022)</small></div>
                     </div>
                 </div>
             </div>

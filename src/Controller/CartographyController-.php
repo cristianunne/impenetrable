@@ -30,90 +30,9 @@ class CartographyController extends AppController
 
     public function downloadData()
     {
-        //Recupero los datos de la URL
-        $data_url = $this->request->getQuery();
-        //$categoria= $data_url['Categoria'];
 
-        $downloadData = $this->paginate($this->Cartography);
-        $this->set(compact('downloadData'));
-
-
-        //$this->set('categoria', $categoria);
     }
 
-    public function downloadDataIndex()
-    {
-        //Recupero los datos de la URL
-        $data_url = $this->request->getQuery();
-        //$categoria= $data_url['Categoria'];
-
-        $downloadData = $this->paginate($this->Cartography);
-        $this->set(compact('downloadData'));
-
-        //$this->set('downloadData', $categoria);
-    }
-
-    public function downloadDataAdd()
-    {
-       $downloadData = $this->Cartography->newEntity();
-
-        if ($this->request->is('post')) {
-            $downloadData = $this->Cartography->patchEntity($downloadData, $this->request->getData());
-            if ($this->Cartography->save($downloadData)) {
-                $this->Flash->success(__('El archivo ha sido guardado con éxito.'));
-
-                return $this->redirect(['action' => 'downloadDataIndex']);
-            }
-            $this->Flash->error(__('El archivo no se ha podido guardar, por favor intente nuevamente.'));
-        }
-        $this->set(compact('downloadData'));
-    }
-
-    public function downloadDataEdit()
-    {
-        //Recupero los datos de la URL
-        $data_url = $this->request->getQuery();
-        //$categoria= $data_url['Categoria'];
-        $id = $data_url['id'];
-
-        //$downloadData = $this->paginate($this->Cartography);
-        //$this->set(compact('downloadData'));
-
-        //$this->set('downloadData', $categoria);
-
-        /*$data_url = $this->request->getQuery();
-        $context = $data_url['Context'];
-        $categoria= $data_url['Categoria'];
-        $id = $data_url['id'];
-
-        $downloadData = $this->Cartography->get($id, [
-            'contain' => []
-        ]);
-
-        $this->set('downloadData', $downloadData);
-
-        $data_url = $this->request->getQuery();
-        $context = $data_url['Context'];
-        $categoria= $data_url['Categoria'];
-        $id = $data_url['id'];*/
-
-
-        $downloadData = $this->Cartography->get($id, [
-            'contain' => [],
-        ]);
-
-
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $downloadData = $this->Cartography->patchEntity($downloadData, $this->request->getData());
-            if ($this->Cartography->save($downloadData)) {
-                $this->Flash->success(__('The tipo intere has been saved.'));
-
-                return $this->redirect(['action' => 'downloadDataIndex']);
-            }
-            $this->Flash->error(__('The puntos intere could not be saved. Please, try again.'));
-        }
-        $this->set(compact('downloadData'));
-    }
 
     public function getDataByLocalidadIdAll()
     {

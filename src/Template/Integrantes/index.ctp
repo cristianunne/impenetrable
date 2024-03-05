@@ -40,212 +40,119 @@
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
-                            <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=43252&amp;datos_academicos=yes&amp;keywords=iighi" target="_blank" rel="noopener">
                                 <img class="foto img-thumbnail img-circle"
-                                     src="https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2020/02/RRHH_maria_laura_salinas-150x150.jpg"
+                                     src="webroot/img/integrantes/salinas.jpg"
                                      alt="Salinas, María Laura" style="height: 165px;">
-                            </a>
                             <div class="mt-3">
                                 <h4 style="color: var(--primary)">Salinas, María Laura</h4>
                                 <p class="text-secondary mb-1">Investigadora Responsable</p>
                                 <p class="text-muted font-size-sm">Investigador/a Adjunto - CONICET</p>
-                                <p class="text-success font-size-sm">marlausali@gmail.com</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
+                                <p><?= $this->Html->link('marlausali@gmail.com', 'mailto:marlausali@gmail.com',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
                                 <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=31376&datos_academicos=yes&keywords=iighi" target="_blank"
                                    class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
             <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
-                            <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=43252&amp;datos_academicos=yes&amp;keywords=iighi" target="_blank" rel="noopener">
                                 <img class="foto img-thumbnail img-circle"
-                                     src="/impenetrable/webroot/img/integrantes/bertoncello.jpg"
-                                     alt="Bertoncello, Rodolfo Valentín" style="height: 165px;">
-                            </a>
+                                     src="webroot/img/integrantes/medina.jpg"
+                                     alt="Medina, Mónica Marisel" style="height: 165px;">
                             <div class="mt-3">
-                                <h4 style="color: var(--primary)">Bertoncello, Rodolfo Valentín</h4>
-                                <p class="text-secondary mb-1">Investigador Responsable</p>
-                                <p class="text-muted font-size-sm">Investigador Independiente - CONICET</p>
-                                <p class="text-success font-size-sm">marlausali@gmail.com</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
-                                <a href="" target="_blank"
+                                <h4 style="color: var(--primary)">Medina, Mónica Marisel</h4>
+                                <p class="text-secondary mb-1">Investigadora Responsable</p>
+                                <p class="text-muted font-size-sm">Investigadora Asistente - CONICET</p>
+                                <p><?= $this->Html->link('mariselmedina@gmail.com', 'mailto:mariselmedina@gmail.com',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
+                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=36297&datos_academicos=yes&keywords=iighi" target="_blank"
                                    class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
             <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
-                            <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=43252&amp;datos_academicos=yes&amp;keywords=iighi" target="_blank" rel="noopener">
                                 <img class="foto img-thumbnail img-circle"
-                                     src="https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2020/02/RRHH_oscar_mari-150x150.jpg"
-                                     alt="Mari, Oscar" style="height: 165px;">
-                            </a>
-                            <div class="mt-3">
-                                <h4 style="color: var(--primary)">Mari, Oscar</h4>
-                                <p class="text-secondary mb-1">Investigador Responsable</p>
-                                <p class="text-muted font-size-sm">Investigador Independiente - CONICET</p>
-                                <p class="text-success font-size-sm">oscar.mari@yahoo.com.ar</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
-                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=22136&datos_academicos=yes&keywords=iighi" target="_blank"
-                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
-                <div class="card card-shadow wow zoomIn">
-                    <div class="card-body">
-                        <div class="d-flex flex-column align-items-center text-center">
-                            <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=43252&amp;datos_academicos=yes&amp;keywords=iighi" target="_blank" rel="noopener">
-                                <img class="foto img-thumbnail img-circle"
-                                     src="https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2020/02/RRHH_alejandra_fantin-150x150.jpg"
-                                     alt="Fantin, Maria Alejandra" style="height: 165px;">
-                            </a>
-                            <div class="mt-3">
-                                <h4 style="color: var(--primary)">Fantín, María Alejandra</h4>
-                                <p class="text-secondary mb-1">Investigador Responsable</p>
-                                <p class="text-muted font-size-sm">Investigadora Independiente - CONICET</p>
-                                <p class="text-success font-size-sm">mafantin@gmail.com</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
-                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=22136&datos_academicos=yes&keywords=iighi" target="_blank"
-                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
-                <div class="card card-shadow wow zoomIn">
-                    <div class="card-body">
-                        <div class="d-flex flex-column align-items-center text-center">
-                            <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=22700&datos_academicos=yes&keywords=iighi" target="_blank" rel="noopener">
-                                <img class="foto img-thumbnail img-circle"
-                                     src="https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2020/02/RRHH_enrique_schaller-150x150.jpg"
-                                     alt="Schaller, Enrique" style="height: 165px;">
-                            </a>
-                            <div class="mt-3">
-                                <h4 style="color: var(--primary)">Schaller, Enrique César</h4>
-                                <p class="text-secondary mb-1">Investigador Responsable</p>
-                                <p class="text-muted font-size-sm">Investigador Adjunto - CONICET</p>
-                                <p class="text-success font-size-sm">schaller53@gmail.com</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
-                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=22136&datos_academicos=yes&keywords=iighi" target="_blank"
-                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
-                <div class="card card-shadow wow zoomIn">
-                    <div class="card-body">
-                        <div class="d-flex flex-column align-items-center text-center">
-                            <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=44403&keywords=F%C3%A1tima%2BFatima%2BVictoria%2BVALENZUELA&datos_academicos=yes" target="_blank" rel="noopener">
-                                <img class="foto img-thumbnail img-circle"
-                                     src="https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2020/02/RRHH_fatima_valenzuela-150x150.jpg"
+                                     src="webroot/img/integrantes/valenzuela.jpg"
                                      alt="Valenzuela, Fatima Victoria" style="height: 165px;">
-                            </a>
                             <div class="mt-3">
                                 <h4 style="color: var(--primary)">Valenzuela, Fátima Victoria</h4>
                                 <p class="text-secondary mb-1">Investigadora Responsable</p>
                                 <p class="text-muted font-size-sm">Investigadora Asistente - CONICET</p>
-                                <p class="text-success font-size-sm">fatima_val@live.com.ar</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
-                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=22136&datos_academicos=yes&keywords=iighi" target="_blank"
+                                <p><?= $this->Html->link('fatima_val@live.com.ar', 'mailto:fatima_val@live.com.ar',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
+                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=44403&datos_academicos=yes&keywords=iighi" target="_blank"
                                    class="btn btn-primary btn-conicet"><i class="fa"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
+                <div class="card card-shadow wow zoomIn">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img class="foto img-thumbnail img-circle"
+                                 src="webroot/img/integrantes/da_silva.jpg"
+                                 alt="Da Silva, Cristian" style="height: 165px;">
+                            <div class="mt-3">
+                                <h4 style="color: var(--primary)">Da Silva, Cristian Javier</h4>
+                                <p class="text-secondary mb-1">Investigador/Técnico Colaborador</p>
+                                <p class="text-muted font-size-sm">Investigador Asistente - CONICET</p>
+                                <p><?= $this->Html->link('cristian297@hotmail.com', 'mailto:cristian297@hotmail.com',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
+                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?keywords=&id=43252&datos_academicos=yes" target="_blank"
+                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
+                <div class="card card-shadow wow zoomIn">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img class="foto img-thumbnail img-circle"
+                                 src="webroot/img/integrantes/toullieux.jpg"
+                                 alt="Toullieux, Cristian" style="height: 165px;">
+                            <div class="mt-3">
+                                <h4 style="color: var(--primary)">Toullieux, Cristian Roberto</h4>
+                                <p class="text-secondary mb-1">Investigador/Técnico Colaborador</p>
+                                <p class="text-muted font-size-sm">Personal de Apoyo a la Investigación (CPA) - CONICET</p>
+                                <p class="text-success font-size-sm"></p>
+                                <p><?= $this->Html->link('cuatroymedio4@hotmail.com', 'mailto:cuatroymedio4@hotmail.com',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
+                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=41313&datos_academicos=yes&keywords=iighi" target="_blank"
+                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
+                <div class="card card-shadow wow zoomIn">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                                <img class="foto img-thumbnail img-circle"
+                                     src="webroot/img/integrantes/fantin.jpg"
+                                     alt="Fantin, Maria Alejandra" style="height: 165px;">
+                            <div class="mt-3">
+                                <h4 style="color: var(--primary)">Fantín, María Alejandra</h4>
+                                <p class="text-secondary mb-1">Investigador Responsable</p>
+                                <p class="text-muted font-size-sm">Investigadora Independiente - CONICET</p>
+                                <p><?= $this->Html->link('mafantin@gmail.com', 'mailto:mafantin@gmail.com',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
+                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=20226&datos_academicos=yes&keywords=iighi" target="_blank"
+                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
                             </div>
                         </div>
                     </div>
@@ -257,29 +164,16 @@
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
                                 <img class="foto img-thumbnail img-circle"
-                                     src="https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2020/02/RRHH_monica_medina-150x150.jpg"
-                                     alt="Valenzuela, Fatima Victoria" style="height: 165px;">
-                            </a>
+                                     src="webroot/img/integrantes/mari.jpg"
+                                     alt="Mari, Oscar" style="height: 165px;">
                             <div class="mt-3">
-                                <h4 style="color: var(--primary)">Medina, Mónica Marisel</h4>
-                                <p class="text-secondary mb-1">Investigadora Colaboradora</p>
-                                <p class="text-muted font-size-sm">Investigadora Asistente - CONICET</p>
-                                <p class="text-success font-size-sm">becariosiighi@gmail.com</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
+                                <h4 style="color: var(--primary)">Mari, Oscar</h4>
+                                <p class="text-secondary mb-1">Investigador Responsable</p>
+                                <p class="text-muted font-size-sm">Investigador Independiente - CONICET</p>
+                                <p class="text-success font-size-sm"></p>
+                                <p><?= $this->Html->link('oscar.mari@yahoo.com.ar', 'mailto:oscar.mari@yahoo.com.ar',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
                                 <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=22136&datos_academicos=yes&keywords=iighi" target="_blank"
                                    class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
                             </div>
                         </div>
                     </div>
@@ -290,30 +184,98 @@
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
+                                <img class="foto img-thumbnail img-circle"
+                                     src="webroot/img/integrantes/schaller.jpg"
+                                     alt="Schaller, Enrique" style="height: 165px;">
+                            <div class="mt-3">
+                                <h4 style="color: var(--primary)">Schaller, Enrique César</h4>
+                                <p class="text-secondary mb-1">Investigador Responsable</p>
+                                <p class="text-muted font-size-sm">Investigador Adjunto - CONICET</p>
+                                <p><?= $this->Html->link('schaller53@gmail.com', 'mailto:schaller53@gmail.com',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
+                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=22700&datos_academicos=yes&keywords=iighi" target="_blank"
+                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
+                <div class="card card-shadow wow zoomIn">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                                <img class="foto img-thumbnail img-circle"
+                                     src="webroot/img/integrantes/bertoncello.jpg"
+                                     alt="Bertoncello, Rodolfo Valentín" style="height: 165px;">
+                            <div class="mt-3">
+                                <h4 style="color: var(--primary)">Bertoncello, Rodolfo Valentín</h4>
+                                <p class="text-secondary mb-1">Investigador Responsable</p>
+                                <p class="text-muted font-size-sm">Investigador Independiente - CONICET</p>
+                                <div class="btn btn-conicet disabled"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
+                <div class="card card-shadow wow zoomIn">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                                <img class="foto img-thumbnail img-circle"
+                                     src="webroot/img/integrantes/casanias.jpg"
+                                     alt="Casañas Rígoli, Roy Arturo" style="height: 165px;">
+                            <div class="mt-3">
+                                <h4 style="color: var(--primary)">Casañas Rígoli, Roy Arturo</h4>
+                                <p class="text-secondary mb-1">Investigador Colaborador</p>
+                                <p class="text-muted font-size-sm">Becario Doctoral - CONICET-APNAC</p>
+                                <p class="text-success font-size-sm"></p>
+                                <p><?= $this->Html->link('royarturo@gmail.com', 'mailto:royarturo@gmail.com',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
+                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=65825&datos_academicos=yes&keywords=iighi" target="_blank"
+                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
+                <div class="card card-shadow wow zoomIn">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                                <img class="foto img-thumbnail img-circle"
+                                     src="webroot/img/integrantes/blancos.jpg"
+                                     alt="Blancos, Milagros Belén" style="height: 165px;">
+                            <div class="mt-3">
+                                <h4 style="color: var(--primary)">Blancos, Milagros Belén</h4>
+                                <p class="text-secondary mb-1">Investigadora Colaboradora</p>
+                                <p class="text-muted font-size-sm">Becaria Doctoral - CONICET</p>
+                                <p class="text-success font-size-sm"></p>
+                                <p><?= $this->Html->link('bmilagrosbelen@gmail.com', 'mailto:bmilagrosbelen@gmail.com',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
+                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=61084&datos_academicos=yes&keywords=iighi" target="_blank"
+                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+
+            
+
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
+                <div class="card card-shadow wow zoomIn">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
                             <img class="foto img-thumbnail img-circle"
-                                 src="	https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2020/02/RRHH_lorena_cayre_baito-150x150.jpg"
+                                 src="webroot/img/integrantes/cayre.jpg"
                                  alt="Valenzuela, Fatima Victoria" style="height: 165px;">
-                            </a>
                             <div class="mt-3">
                                 <h4 style="color: var(--primary)">Cayré Baito, Lorena</h4>
                                 <p class="text-secondary mb-1">Investigadora Colaboradora</p>
                                 <p class="text-muted font-size-sm">Investigadora UNNE</p>
-                                <p class="text-success font-size-sm">lcayrebaito@yahoo.com.ar</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
-                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=22136&datos_academicos=yes&keywords=iighi" target="_blank"
-                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
+                                <p><?= $this->Html->link('lcayrebaito@yahoo.com.ar', 'mailto:lcayrebaito@yahoo.com.ar',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
+                                <a href="https://www.unne.edu.ar/" class="btn btn-primary btn-unne" target="_blank"></a>
                             </div>
                         </div>
                     </div>
@@ -326,29 +288,13 @@
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
                             <img class="foto img-thumbnail img-circle"
-                            <img class="foto img-thumbnail img-circle"
-                                 src="/impenetrable/webroot/img/integrantes/guarino.jpeg"
+                                 src="webroot/img/integrantes/guarino.jpeg"
                                  alt="Guarino, graciela" style="height: 165px; width: 165px;">
-                            </a>
                             <div class="mt-3">
                                 <h4 style="color: var(--primary)">Guarino, Graciela</h4>
                                 <p class="text-secondary mb-1">Investigadora Colaboradora</p>
                                 <p class="text-muted font-size-sm">Investigadora UNNE</p>
-                                <p class="text-success font-size-sm">Sin registro</p>
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
-                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=22136&datos_academicos=yes&keywords=iighi" target="_blank"
-                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
+                                <a href="https://www.unne.edu.ar/" class="btn btn-primary btn-unne" target="_blank"></a>
                             </div>
                         </div>
                     </div>
@@ -361,102 +307,50 @@
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
                             <img class="foto img-thumbnail img-circle"
-                            <img class="foto img-thumbnail img-circle"
-                                 src="/impenetrable/webroot/img/integrantes/user_hombre.png"
+                                 src="webroot/img/integrantes/f-echarri.jpg"
                                  alt="Echarri, Fabio" style="height: 165px;">
-                            </a>
                             <div class="mt-3">
                                 <h4 style="color: var(--primary)">Echarri, Fabio</h4>
                                 <p class="text-secondary mb-1">Investigador Colaborador</p>
                                 <p class="text-muted font-size-sm">Investigador UNNE</p>
-                                <p class="text-success font-size-sm">Sin registro</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
-                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=22136&datos_academicos=yes&keywords=iighi" target="_blank"
-                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
+                                <a href="https://www.unne.edu.ar/" class="btn btn-primary btn-unne" target="_blank"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
             <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
                             <img class="foto img-thumbnail img-circle"
-                            <img class="foto img-thumbnail img-circle"
-                                 src="/impenetrable/webroot/img/integrantes/user_woman.png"
-                                 alt="Camelino, Maria" style="height: 165px;">
-                            </a>
+                                 src="webroot/img/integrantes/davidoff.jpg"
+                                 alt="Davidoff, Eve" style="height: 165px;">
                             <div class="mt-3">
-                                <h4 style="color: var(--primary)">Nuñez Camelino, María</h4>
+                                <h4 style="color: var(--primary)">Davidoff, Eve</h4>
                                 <p class="text-secondary mb-1">Investigadora Colaboradora</p>
                                 <p class="text-muted font-size-sm">Investigadora UNNE</p>
-                                <p class="text-success font-size-sm">Sin registro</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
-                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=22136&datos_academicos=yes&keywords=iighi" target="_blank"
-                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
+                                <p class="text-success font-size-sm"></p>
+                                <a href="https://www.unne.edu.ar/" class="btn btn-primary btn-unne" target="_blank"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
             <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
                 <div class="card card-shadow wow zoomIn">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
                             <img class="foto img-thumbnail img-circle"
-                            <img class="foto img-thumbnail img-circle"
-                                 src="/impenetrable/webroot/img/integrantes/user_woman.png"
+                                 src="webroot/img/integrantes/barrios.jpg"
                                  alt="Barrios, Paola" style="height: 165px;">
-                            </a>
                             <div class="mt-3">
                                 <h4 style="color: var(--primary)">Barrios, Paola</h4>
                                 <p class="text-secondary mb-1">Investigadora Colaboradora</p>
                                 <p class="text-muted font-size-sm">Investigadora UNNE</p>
-                                <p class="text-success font-size-sm">Sin registro</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
-                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=22136&datos_academicos=yes&keywords=iighi" target="_blank"
-                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
+                                <a href="https://www.unne.edu.ar/" class="btn btn-primary btn-unne" target="_blank"></a>
                             </div>
                         </div>
                     </div>
@@ -470,30 +364,15 @@
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
                             <img class="foto img-thumbnail img-circle"
-                            <img class="foto img-thumbnail img-circle"
-                                 src="https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2020/02/RRHH_fernando_pozzaglio-150x150.jpg"
+                                 src="webroot/img/integrantes/pozzaglio.jpg"
                                  alt="Pozzaglio, Fernando" style="height: 165px;">
-                            </a>
                             <div class="mt-3">
                                 <h4 style="color: var(--primary)">Pozzaglio, Fernando Ariel</h4>
                                 <p class="text-secondary mb-1">Investigador/Técnico Colaborador</p>
                                 <p class="text-muted font-size-sm">Personal de Apoyo a la Investigación (CPA) - CONICET</p>
-                                <p class="text-success font-size-sm">fearpozzaglio@yahoo.com.ar</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
+                                <p><?= $this->Html->link('fearpozzaglio@yahoo.com.ar', 'mailto:fearpozzaglio@yahoo.com.ar',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
                                 <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=29959&datos_academicos=yes&keywords=iighi" target="_blank"
                                    class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
                             </div>
                         </div>
                     </div>
@@ -506,30 +385,13 @@
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
                             <img class="foto img-thumbnail img-circle"
-                            <img class="foto img-thumbnail img-circle"
-                                 src="https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2020/02/RRHH_cristian_da_silva-150x150.jpg"
-                                 alt="Da Silva, Cristian" style="height: 165px;">
-                            </a>
+                                 src="webroot/img/integrantes/ramirez.jpg"
+                                 alt="Rubén Ramírez" style="height: 165px;">
                             <div class="mt-3">
-                                <h4 style="color: var(--primary)">Da Silva, Cristian Javier</h4>
-                                <p class="text-secondary mb-1">Investigador/Técnico Colaborador</p>
-                                <p class="text-muted font-size-sm">Personal de Apoyo a la Investigación (CPA) - CONICET</p>
-                                <p class="text-success font-size-sm">Cristian297@hotmail.com</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
-                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=43252&amp;datos_academicos=yes&amp;keywords=iighi" target="_blank"
-                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
+                                <h4 style="color: var(--primary)">Rubén Ramírez</h4>
+                                <p class="text-secondary mb-1">Investigador Colaborador</p>
+                                <p class="text-muted font-size-sm">Rector del Instituto de Educación Superior "René Favaloro"</p>
+                                <a href="https://inscastelli-cha.infd.edu.ar/sitio/" class="btn btn-primary btn-favaloro" target="_blank"></a>
                             </div>
                         </div>
                     </div>
@@ -541,42 +403,37 @@
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
                             <img class="foto img-thumbnail img-circle"
-                            <img class="foto img-thumbnail img-circle"
-                                 src="https://iighi.conicet.gov.ar/wp-content/uploads/sites/29/2020/02/RRHH_cristian_toullieux-150x150.jpg"
-                                 alt="Toulliex, Cristian" style="height: 165px;">
-                            </a>
+                                 src="webroot/img/integrantes/u_mujer.jpg"
+                                 alt="Guadalupe López" style="height: 165px;">
                             <div class="mt-3">
-                                <h4 style="color: var(--primary)">Toullieux, Cristian Roberto</h4>
-                                <p class="text-secondary mb-1">Técnico Colaborador</p>
-                                <p class="text-muted font-size-sm">Personal de Apoyo a la Investigación (CPA) - CONICET</p>
-                                <p class="text-success font-size-sm">cuatroymedio4@hotmail.com</p>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-twitter', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-twitter', 'escape' => false, 'target' => '_blank']) ?>
-
-
-                                <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=41313&datos_academicos=yes&keywords=iighi" target="_blank"
-                                   class="btn btn-primary btn-conicet"><i class="fa"></i></a>
-
-                                <?= $this->Html->link($this->Html->tag('span', '', ['class' => 'fab fa-linkedin', 'aria-hidden' => 'true']),
-                                    ['controller' => '', 'action' => '', '?' =>
-                                        ['Accion' => 'Editar Museos', 'Categoria' => 'Museos', 'Tabla_name' => 'Museos']],
-                                    ['class' => 'btn btn-primary btn-linkedin', 'escape' => false, 'target' => '_blank']) ?>
-
+                                <h4 style="color: var(--primary)">Guadalupe López</h4>
+                                <p class="text-secondary mb-1">Investigadora Colaboradora</p>
+                                <p class="text-muted font-size-sm">Instituto de Educación Superior "René Favaloro"</p>
+                                <a href="https://inscastelli-cha.infd.edu.ar/sitio/" class="btn btn-primary btn-favaloro" target="_blank"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-
-
+            <div class="col-xs-12 col-md-3 valign-center col-left mg-card">
+                <div class="card card-shadow wow zoomIn">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img class="foto img-thumbnail img-circle"
+                                 src="webroot/img/integrantes/u_hombre.jpg"
+                                 alt="Daniel Liberatti" style="height: 165px;">
+                            <div class="mt-3">
+                                <h4 style="color: var(--primary)">Daniel Liberatti</h4>
+                                <p class="text-secondary mb-1">Investigador Colaborador</p>
+                                <p class="text-muted font-size-sm">Pasante del IIGHI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
-
-    </div>
+</div>
 
 
 

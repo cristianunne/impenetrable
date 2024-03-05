@@ -22,7 +22,7 @@
 
     </div>
 
-<div class="container-xxl container-background-lightgray padding-15 py-5">
+<div class="container-xxl padding-15 py-5">
 
         <div class="row g-4 bs-white font-size-18 padding-20">
             <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
@@ -35,12 +35,30 @@
                 <p class="text-gray" style="text-align: justify;">A través de una <strong>metodología participativa</strong> y <strong>colaborativa</strong>, es decir, pretendemos que el conocimiento y la transmisión del mismo sea  producto de una co-construcción:</p>
 
                 <ul class="text-gray fa-ul">
-                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> Propiciamos la participación activa de los actores locales que residen y conforman el paisaje cultural del Impenetrable (comunidades indígenas, criollos y descendientes de inmigrantes europeos), así como también de entidades gubernamentales –municipios, Instituto de Cultura y Turismo de la provincia- y entidades no gubernamentales como por ejemplo, fundaciones, asociación de artesanas, etc.</li>
-                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> Discutimos y problematizamos con los actores: <em>¿Qué mostrar en el mapa? ¿Qué relevar, registrar y compartir con los otros en el itinerario cultural del Impenetrable?</em> Estas decisiones son tomadas por los actores partícipes del proyecto. </li>
-                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> En cada reunión de trabajo se empezó con un examen del territorio de las diferentes localidades: Juan José Castelli, Miraflores, Misión Nueva Pompeya, Villa Río Bermejito, El Sauzalito, entre otros municipios.</li>
+                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> Propiciamos la participación activa de los actores locales que residen y conforman el paisaje cultural del Impenetrable (comunidades indígenas, no indígenas o criollos y descendientes de inmigrantes europeos), así como también de entidades gubernamentales –municipios, Instituto de Cultura y Turismo de la provincia- y entidades no gubernamentales como por ejemplo, fundaciones, asociación de artesanas, etc.</li>
+                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> Discutimos y problematizamos con los actores: <em>¿Qué mostrar en el mapa? ¿Qué relevar, registrar y compartir con los otros en el itinerario cultural del Impenetrable?</em> Estas decisiones son tomadas por los actores partícipes del proyecto.</li>
+                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> En cada reunión de trabajo se realizó un análisis del territorio de las diferentes localidades: Juan José Castelli, Miraflores, Misión Nueva Pompeya, Villa Río Bermejito, El Sauzalito, entre otros municipios.</li>
                 </ul>
 
+            </div>
+            <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                <h5 class="mb-3 text-title">¿Con quiénes trabajamos?</h5>
+
+                <p class="text-gray" style="text-align: justify;">El proyecto implicó que articularamos saberes y conocimientos con diferentes instituciones educativas y gubernamentales del Impenetrable.</p>
+                <p class="text-gray" style="text-align: justify;">Por un lado, el Instituto de Educación Superior "Rene Favaloro" de la localidad de <em class="text-success">Juan José Castelli</em> que cuenta con una Técnicatura en Turismo. Allí tuvimos el apoyo del Rector de dicha institución, <strong><em>Mgter.</em> Rubén Ramírez</strong> y la colaboración técnica de la <strong><em>Prof.</em> Guadalupe López</strong>, Técnica de Hotelería y Turismo.</p>
+                <p class="text-gray" style="text-align: justify;">Por otro lado, en cada una de las localidades fuimos desarrollando reuniones de trabajo con diferentes actores locales que nos acompañaron en las tareas de campo, algunos de ellos funcionarios de los municipios y otros lugareños que contaban con amplio conocimiento de los lugares de naturaleza y culturales.</p>
+                <ul class="text-gray fa-ul">
+                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> En la localidad de <em class="text-success">Nueva Pompeya</em>, trabajamos con <strong>Walter Cardozo</strong>, el entonces secretario de gobierno, <strong>Neri Fernández</strong> y <strong>Jesús Rojas</strong>.</li>
+                <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> En la localidad de <em class="text-success">Miraflores</em>, articulamos las tareas con <strong>Dalma Bordón</strong> y <strong>Lionel Pittau</strong>, miembros de la Secretaria de Turismo.</li>
+                <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> En la localidad de <em class="text-success">Villa Rio Bermejito</em>, trabajamos con el <strong><em>Prof.</em> Oscar Liberatti</strong> y funcionarios del municipio.</li>
+                <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> En la localidad de <em class="text-success">Fuerte Esperanza</em>, hicimos el recorrido con <strong>José Galo</strong> y contamos con aportes de <strong>Marina Mercado</strong>.</li>
+                <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> En la localidad de <em class="text-success">El Sauzalito</em> nos acompañó <strong>Rubén Flores</strong>, secretario de Turismo, y <strong>Douglas Prado</strong>.</li>
+                <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> En el <em class="text-success">Parque Provincial Fuerte Esperanza</em>, fue fundamental la atención de la guardaparque <strong>Paola Ruíz Diaz</strong>.</li>
+                <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> En la localidad de <em class="text-success">Juan José Castelli</em>, el historiador local, <strong>Juan José Schmidt</strong> y el periodista <strong>Gustavo Gallinger</strong>.</li>
                 <br>
+            </ul>
+        </div>
+        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                 <h5 class="mb-3 text-title">¿Qué se registró?</h5>
                 <p class="text-gray" style="text-align: justify;">Se procedió al desarrollo de la geolocalización y relevamiento de material visual de cada sitio. En algunos casos, se procedió a la elaboración de entrevistas para relevar las historias locales del sitio; de esa forma, en los parajes se realizaron entrevistas a los caciques, referentes comunitarios o integrantes de las comunidades.</p>
 
@@ -117,18 +135,6 @@
                     </div>
                 </div>
                 </ul>
-
-                <!--<ul class="text-gray fa-ul">
-                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> Sitios históricos</li>
-                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> Espacios naturales (espejos de agua o antiguos recorridos del río Bermejo)</li>
-                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> Parajes</li>
-                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> Lugares de comercios destinados a la venta de comidas</li>
-                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> Tierras comunales de comunidades indígenas</li>
-                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> Asociaciones indígenas que venden artesanías</li>
-                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> Campos o casas de campo (puntos para alojarse urbanos)</li>
-                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> Monumentos</li>
-                    <li class="margin-bottom" style="text-align: justify;"><i class="fa fa-check"></i> Fiestas o manifestaciones culturales</li>
-                </ul>-->
 
             </div>
 

@@ -488,6 +488,24 @@ li a:hover{
     border-color: #6ea0b4;
 }
 
+.btn-unne{
+    background: url("../img/logo-universidad-nacional-del-nordeste.png");
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+
+.btn-favaloro{
+    background: url("../img/logo-IES-favaloro.png");
+    background-size: 31px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+
 .btn-block{
     width: 100%;
 }

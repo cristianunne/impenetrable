@@ -99,20 +99,20 @@ $this->Html->link(
         $(function(){
         $(document).scroll(function(){
             if($(this).scrollTop() > 1) {
-                $('#logo').attr('src','img/logo-impenetrable.png')
+                $('#logo').attr('src', '<?= $this->Url->image('logo-impenetrable.png'); ?>' );
             }
             if($(this).scrollTop() < 1) {
-             $('#logo').attr('src','img/logo-impenetrable-blanco.png');
+             $('#logo').attr('src','<?= $this->Url->image('logo-impenetrable-blanco.png'); ?>' );
             }
         });
     });
     $(function(){
     $(window).on("resize", function(){
           if($(window).width() < 992){
-              $('#logo').attr("src","img/logo-impenetrable.png");
+              $('#logo').attr("src",'<?= $this->Url->image('logo-impenetrable.png'); ?>' );
           }
           else{
-              $('#logo').attr("src","img/logo-impenetrable-blanco.png");
+              $('#logo').attr("src",'<?= $this->Url->image('logo-impenetrable-blanco.png'); ?>' );
           }
         })
     });

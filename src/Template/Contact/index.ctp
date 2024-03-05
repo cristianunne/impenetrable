@@ -9,7 +9,7 @@
                 </h1>
 
                 <p class="wow zoomIn" style="vertical-align: middle; color: #198754;">
-                    Desde aquí podrás comunicarte con nosotros.
+                    Te brindamos información para comunicarte con nosotros.
                 </p>
 
             </div>
@@ -24,26 +24,22 @@
     <div class="container px-lg-5">
 		 <div class="row justify-content-center">
 		    <div class="col-lg-4 col-md-6 col-xs-12">
-		    	<?= $this->Flash->render() ?>
-		        <?= $this->Form->create($contact) ?>
-		        <div class="form-group">
-		            <?= $this->Form->label('name', __("Nombre {0}", '<span class="text-danger">*</span>'), ['data-toggle' => 'tooltip', 'title' => __('Campo requerido.'), 'escape' => false]) ?>
-		            <?= $this->Form->input('name', ['class' => 'form-control', 'placeholder' => __("Nombre"), 'label' => false]) ?>
+		    	<div class="form-group">
+		    		<h4 class="text-center"><i class="fa fa-phone"></i> Teléfono</h4>
+		            <p class="text-center px-3 mt-auto mx-auto">+54 362 457-2190</p>
 		        </div>
-		        <div class="form-group">
-		            <?= $this->Form->label('email', __("Email {0}", '<span class="text-danger">*</span>'), ['data-toggle' => 'tooltip', 'title' => __('Campo requerido.'), 'escape' => false]) ?>
-		            <?= $this->Form->input('email', ['class' => 'form-control', 'placeholder' => __("Email"), 'label' => false]) ?>
+		    </div>
+		    <div class="col-lg-4 col-md-6 col-xs-12">
+		    	<div class="form-group">
+		    		<h4 class="text-center"><i class="fa fa-map-marker"></i> Dirección</h4>
+		            <p class="text-center px-3 mt-auto mx-auto">Av. Castelli 930 (H3504AAO) Resistencia - Chaco - República Argentina</p>
 		        </div>
-		        <div class="form-group">
-		        	<?= $this->Form->label('subject', __("Asunto {0}", '<span class="text-danger">*</span>'), ['data-toggle' => 'tooltip', 'title' => __('Campo requerido.'), 'escape' => false]) ?>
-		            <?= $this->Form->input('subject', ['class' => 'form-control', 'placeholder' => __("Asunto"), 'label' => false]) ?>
+		    </div>
+		    <div class="col-lg-4 col-md-6 col-xs-12">
+		    	<div class="form-group">
+		    		<h4 class="text-center"><i class="fa fa-envelope"></i> Email</h4>
+		            <p class="text-center"><a class="btn px-3 mt-auto mx-auto" href="mailto:nehciighi@gmail.com">nehciighi@gmail.com</a></p>
 		        </div>
-		        <div class="form-group">
-		            <?= $this->Form->label('body', __("Mensaje {0}", '<span class="text-danger">*</span>'), ['data-toggle' => 'tooltip', 'title' => __('Campo requerido.'), 'escape' => false]) ?>
-		            <?= $this->Form->input('body', ['type' => 'textarea', 'class' => 'form-control', 'placeholder' => __("Escribe el mensaje..."), 'label' => false]) ?>
-		        </div>
-		        <?= $this->Form->button(__('{0}  Enviar', '<i class="fa fa-envelope"></i>'), ['class' => 'btn btn-block', 'style' => 'background-color: #198754; color:#ffffff;', 'escape' => false]) ?>
-		        <?= $this->Form->end() ?>
 		    </div>
 		</div>
 	</div>
