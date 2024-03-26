@@ -25,13 +25,13 @@
 
     </div>
 
-<div class="container-xxl py-5 mb-5">
+<div class="container-xxl mb-5">
 
-        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+        <!--<div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
             <h2 class="mt-2 text-success">Documentación del Proyecto</h2>
-        </div>
+        </div>-->
 
-    <div class="container my-5 py-5 px-lg-5">
+    <div class="container my-5 px-lg-5">
         <div class="row g-5 py-5 d-flex justify-content-center text-center">
 
             <div class="col-lg-10 wow fadeInUp">
@@ -41,7 +41,7 @@
                         <table id="example2" class="table table-bordered table-hover dataTable">
                             <thead>
                             <tr>
-                                <th scope="col"><?= $this->Paginator->sort('Fecha') ?></th>
+                                <th style="min-width: 100px;" scope="col"><?= $this->Paginator->sort('Fecha') ?></th>
                                 <th scope="col"><?= $this->Paginator->sort('Título') ?></th>
                                 <th scope="col"><?= $this->Paginator->sort('Descripción') ?></th>
                                 <th scope="col"><?= $this->Paginator->sort('Tamaño (KB)') ?></th>

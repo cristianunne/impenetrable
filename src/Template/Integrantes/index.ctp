@@ -14,9 +14,8 @@
                     ¿Quiénes Somos?
                 </h1>
 
-                <p class="wow zoomIn" style="vertical-align: middle; color: #198754;">
-                   Somos un grupo de investigación constituidos por miembros que realizan sus actividades en el
-                    CONICET, en la Universidad Nacional del Nordeste y en la Universidad Nacional de Buenos Aires.
+                <p class="wow zoomIn p-4" style="vertical-align: middle; color: #198754;">
+                   Somos un grupo de investigación constituidos por miembros que realizan sus actividades en el CONICET, en la Universidad Nacional del Nordeste, en la Universidad Nacional de Buenos Aires y el Instituto de Educación Superior "René Favaloro".
                 </p>
 
             </div>
@@ -46,7 +45,7 @@
                             <div class="mt-3">
                                 <h4 style="color: var(--primary)">Salinas, María Laura</h4>
                                 <p class="text-secondary mb-1">Investigadora Responsable</p>
-                                <p class="text-muted font-size-sm">Investigador/a Adjunto - CONICET</p>
+                                <p class="text-muted font-size-sm">Investigadora Principal - CONICET</p>
                                 <p><?= $this->Html->link('marlausali@gmail.com', 'mailto:marlausali@gmail.com',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
                                 <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=31376&datos_academicos=yes&keywords=iighi" target="_blank"
                                    class="btn btn-primary btn-conicet"><i class="fa"></i></a>
@@ -125,7 +124,7 @@
                                  alt="Toullieux, Cristian" style="height: 165px;">
                             <div class="mt-3">
                                 <h4 style="color: var(--primary)">Toullieux, Cristian Roberto</h4>
-                                <p class="text-secondary mb-1">Investigador/Técnico Colaborador</p>
+                                <p class="text-secondary mb-1">Técnico Colaborador</p>
                                 <p class="text-muted font-size-sm">Personal de Apoyo a la Investigación (CPA) - CONICET</p>
                                 <p class="text-success font-size-sm"></p>
                                 <p><?= $this->Html->link('cuatroymedio4@hotmail.com', 'mailto:cuatroymedio4@hotmail.com',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
@@ -148,7 +147,7 @@
                                      alt="Fantin, Maria Alejandra" style="height: 165px;">
                             <div class="mt-3">
                                 <h4 style="color: var(--primary)">Fantín, María Alejandra</h4>
-                                <p class="text-secondary mb-1">Investigador Responsable</p>
+                                <p class="text-secondary mb-1">Investigadora Responsable</p>
                                 <p class="text-muted font-size-sm">Investigadora Independiente - CONICET</p>
                                 <p><?= $this->Html->link('mafantin@gmail.com', 'mailto:mafantin@gmail.com',['class' => 'text-success font-size-sm', 'escape' => false, 'target' => '_blank']) ?></p>
                                 <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=20226&datos_academicos=yes&keywords=iighi" target="_blank"
@@ -426,7 +425,7 @@
                             <div class="mt-3">
                                 <h4 style="color: var(--primary)">Daniel Liberatti</h4>
                                 <p class="text-secondary mb-1">Investigador Colaborador</p>
-                                <p class="text-muted font-size-sm">Pasante del IIGHI</p>
+                                <p class="text-muted font-size-sm">Pasante del Instituto de Investigaciones Geohistóricas (IIGHI)</p>
                             </div>
                         </div>
                     </div>

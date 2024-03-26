@@ -30,7 +30,7 @@
 <div class="container-xxl py-5 mb-5">
     <div class="row g-4 bs-white font-size-18 padding-20">
         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-            <p class="text-gray" style="text-align: justify;">En todas las localidades del Impenetrable se pueden hallar diversos servicios y productos. En algunas, los emprendedores se encuentran organizados en cooperativas y asociaciones. Presentamos algunas organizaciones de maestras artesanas, servicios gastronómicos y emprendimientos locales.</p>
+            <p class="text-gray" style="text-align: justify;">En todas las localidades del Impenetrable se pueden hallar diversos servicios y productos. En algunas, los emprendedores se encuentran organizados en cooperativas y asociaciones. Presentamos por cada localidad, información del municipio, organizaciones de artesanos, servicios gastronómicos y emprendimientos locales.</p>
         </div>
         <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
             <h2 class="mt-2 text-success">Juan José Castelli</h2>

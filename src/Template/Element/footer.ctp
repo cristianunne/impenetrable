@@ -77,7 +77,7 @@
                         <div class="text">Proyecto de Investigación financiado por la Agencia Nacional de Promoción de la Investigación, el Desarrollo Tecnológico y la Innovación<br><small>(PICT0: UNNE-2019-00028)</small></div>
                         <figure class="footer-logo-2"><a href="https://www.argentina.gob.ar/ciencia/cofecyt" target="_blank">
                                 <?php echo $this->Html->image('iso-cofecyt.png', ["alt" => 'cofecyt', "height" => '60']) ?></a></figure>
-                        <div class="text">Proyecto de Investigación financiado poe el Consejo Federal de Ciencia, Tecnología e Innovación<br><small>(CH-10- PFI-2022)</small></div>
+                        <div class="text">Proyecto de Investigación financiado por el Consejo Federal de Ciencia, Tecnología e Innovación<br><small>(CH-10- PFI-2022)</small></div>
                     </div>
                 </div>
             </div>
@@ -88,8 +88,8 @@
 <!-- footer-bottom -->
 <div class="footer-bottom">
     <div class="container">
-        <div class="copyright"><?= $this->Html->link('El Impenetrable: un itinerario cultural en torno al ambiente, los grupos humanos y su cultura local', ['controller' => 'Index', 'action' => 'index']); ?><br><a href="https://iighi.conicet.gov.ar/" target="_blank">IIGHI, CONICET- UNNE</a><br>
-            &copy; 2024 Todos los derechos reservados
+        <div class="copyright"><?= $this->Html->link('El Impenetrable: un itinerario cultural en torno al ambiente, los grupos humanos y su cultura local', ['controller' => 'Index', 'action' => 'index']); ?><br><a href="https://iighi.conicet.gov.ar/" target="_blank">IIGHI, CONICET- UNNE</a> | &copy; 2024 Todos los derechos reservados<br><br>
+            <script language="JavaScript" type="text/javascript">TrustLogo("https://micuenta.donweb.com/img/sectigo_positive_sm.png", "CL1", "none");</script><a href="https://donweb.com/es-ar/certificados-ssl" id="comodoTL" title="Certificados SSL Argentina">Certificados SSL Argentina</a>
     </div>
     </div>
 </div>

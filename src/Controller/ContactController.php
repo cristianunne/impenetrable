@@ -19,16 +19,16 @@ class ContactController extends AppController
 
     public function index()
     {
-        $contact = new ContactForm();
+        /*$contact = new ContactForm();
         if ($this->request->is('post')) {
             if ($contact->execute($this->request->getData())) {
                 $this->Flash->success('Mensaje enviado. ¿Desea enviar otro menasje?');
                 return $this->redirect(['controller' => 'Contact', 'action' => 'Index']);
             } else {
-                $this->Flash->error('Hubo un problema enviando el fromulario.');
+                $this->Flash->error('Hubo un problema enviando el fromulario. Por favor intente de nuevo.');
             }
         }
-        $this->set('contact', $contact);
+        $this->set('contact', $contact);*/
     }
 
     //$errors = $form->errors();

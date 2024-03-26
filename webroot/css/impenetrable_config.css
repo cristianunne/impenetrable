@@ -912,7 +912,8 @@ body.example div.dataTables_wrapper ul li, body.example div.dataTables_wrapper o
     left: -2%;
     top: 95%;
     text-align: right;
-    color: #a5a5a5;
+    color: #ffffff;
+    text-shadow: 4px 3px 7px rgba(0,0,0,1);
     }
 
 .owl-carousel .owl-nav [class*='owl-'] {
@@ -1045,7 +1046,7 @@ body.example div.dataTables_wrapper ul li, body.example div.dataTables_wrapper o
     .slider-intro-2{
         display: none;
     }
-
+}
 
 .tile {  
   width: 100%;
@@ -1078,4 +1079,12 @@ body.example div.dataTables_wrapper ul li, body.example div.dataTables_wrapper o
         color: #092E0F;
     }
   
+}
+
+.pagina-works{
+    max-width: 600px;
+}
+
+.sup{
+    scroll-margin-top: 6rem;
 }

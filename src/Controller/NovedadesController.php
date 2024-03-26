@@ -11,7 +11,7 @@ use Cake\Event\EventInterface;
  */
 class NovedadesController extends AppController
 {
-    protected $_localidades_number = [
+    /*protected $_localidades_number = [
         1 => 'Miraflores',
         2 =>  'Mision Nueva Pompeya',
         3 => 'Comandancia Frias',
@@ -19,7 +19,7 @@ class NovedadesController extends AppController
         5 => 'Villa Rio Bermejito',
         6 => 'Fortin Lavalle',
 
-    ];
+    ];*/
 
     public function beforeFilter(EventInterface $event)
     {
@@ -29,7 +29,7 @@ class NovedadesController extends AppController
 
     public function index()
     {
-        $novedades = $this->paginate($this->Novedades);
+        /*$novedades = $this->paginate($this->Novedades);
 
         //Recupero los datos de la URL
         $data_url = $this->request->getQuery();
@@ -39,10 +39,10 @@ class NovedadesController extends AppController
             ->orderAsc('localidad');
 
         $this->set('artesanos', $artesanos);
-        //$this->set('categoria', $categoria);
+        //$this->set('categoria', $categoria);*/
 
     }
-
+/*
     public function view($id = null)
     {
         $artesanos = $this->paginate($this->Novedades);
@@ -151,7 +151,7 @@ class NovedadesController extends AppController
 
 
         //construyo los datos a mostrar
-        $localidades_number = $this->_localidades_number;
+    /*    $localidades_number = $this->_localidades_number;
 
         $this->set(compact('localidades_number'));
 
@@ -212,5 +212,5 @@ class NovedadesController extends AppController
 
         $this->set('categoria', $categoria);
 
-    }
+    }*/
 }

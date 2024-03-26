@@ -31,11 +31,11 @@ class CartographyController extends AppController
     public function downloadData()
     {
         //Recupero los datos de la URL
-        $data_url = $this->request->getQuery();
+       // $data_url = $this->request->getQuery();
         //$categoria= $data_url['Categoria'];
 
-        $downloadData = $this->paginate($this->Cartography);
-        $this->set(compact('downloadData'));
+      //  $downloadData = $this->paginate($this->Cartography);
+       // $this->set(compact('downloadData'));
 
 
         //$this->set('categoria', $categoria);

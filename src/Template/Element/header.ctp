@@ -2,7 +2,7 @@
 
 
 <header class="main-header">
-    <nav class="navbar navbar-expand-lg navbar-light navbar-impenetrable px-4 px-lg-5 py-3 py-lg-0 nav-backgorund">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light navbar-impenetrable px-4 px-lg-5 py-3 py-lg-0 nav-backgorund">
 
             <!-- <h1 class="m-0"><i class="fa fa-tree me-2"></i><span class="fs-5">EL IMPENETRABLE</span></h1>-->
            
@@ -79,13 +79,26 @@ $this->Html->link(
                 );
                 ?>
 
-                <?=  $this->Html->link(
-                    'Cartografía',
-                    ['controller' => 'Cartography', 'action' => 'index', '?' => ['Categoria' => 'Cartography']],
-                    ['class' => 'dnav-item nav-link', 'id' => "li_Cartography"]
-                );
-                ?>
-                <!--<a href="contact.html" class="nav-item nav-link">Contacto</a>-->
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="li_Cartography">Cartografía</a>
+                    <div class="dropdown-menu m-0">
+                        <?=  $this->Html->link(
+                            'Mapa Interactivo',
+                            ['controller' => 'Cartography', 'action' => 'interactive_map', '?' => ['Categoria' => 'Cartography']],
+                            ['class' => 'dropdown-item']
+                        );
+                        ?>
+
+                        <?=  $this->Html->link(
+                            'Centro de Descargas',
+                            ['controller' => 'Cartography', 'action' => 'download_data', '?' => ['Categoria' => 'Cartography']],
+                            ['class' => 'dropdown-item']
+                             );
+                        ?>
+
+                    </div>
+                </div>
                 <?=  $this->Html->link(
                     'Contacto',
                     ['controller' => 'Contact', 'action' => 'index', '?' => ['Categoria' => 'Contact']],
@@ -97,15 +110,31 @@ $this->Html->link(
     </nav>
     <script>
         $(function(){
+        if ($(window).width() < 992) {
+                $('#logo').attr("src",'<?= $this->Url->image('logo-impenetrable.png'); ?>' );
+            }
         $(document).scroll(function(){
             if($(this).scrollTop() > 1) {
-                $('#logo').attr('src', '<?= $this->Url->image('logo-impenetrable.png'); ?>' );
+                if ($(window).width() < 992) {
+                    $('#logo').attr("src",'<?= $this->Url->image('logo-impenetrable-blanco.png'); ?>' );
+                }
+                else {
+                   $('#logo').attr("src",'<?= $this->Url->image('logo-impenetrable.png'); ?>' );
+                }
             }
             if($(this).scrollTop() < 1) {
-             $('#logo').attr('src','<?= $this->Url->image('logo-impenetrable-blanco.png'); ?>' );
+                if ($(window).width() < 992) {
+                    $('#logo').attr("src",'<?= $this->Url->image('logo-impenetrable.png'); ?>' );
+                }
+                else {
+                   $('#logo').attr("src",'<?= $this->Url->image('logo-impenetrable-blanco.png'); ?>' );
+                }
             }
         });
     });
+
+
+
     $(function(){
     $(window).on("resize", function(){
           if($(window).width() < 992){

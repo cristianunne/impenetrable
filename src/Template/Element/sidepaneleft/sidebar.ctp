@@ -56,7 +56,7 @@
                             <h5 class="card-title" style="color: #198754;">Misión Nueva Pompeya</h5>
                             <p class="card-text">La localidad de Misión Nueva Pompeya se localiza en el departamento General Güemes de la provincia del Chaco.
                                 A unos 185 kilómetros de la ciudad de Castelli y a unos 480 kilómetros de la ciudad de Resistencia.
-                            </p>
+                            </p>-->
                             <!-- Funcion de focus map -->
                             <button class="btn btn-success float-right" attr="2" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button>
                         </div>
@@ -73,7 +73,7 @@
                             <h5 class="card-title" style="color: #198754;">Fuerte Esperanza</h5>
                             <p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p>
                             <!-- Funcion de focus map -->
-                            <button class="btn btn-success float-right" attr="7" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button>
+                            <button class="btn btn-success float-right" attr="3" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button>
                         </div>
                     </div>
 
@@ -101,7 +101,7 @@
 
                         <div class="card-body">
                             <h5 class="card-title" style="color: #198754;">Villa Rio Bermejito</h5>
-                            <p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistance por Ruta Provincial Nº 9.</p>
+                            <p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p>
                             <!-- Funcion de focus map -->
                             <button class="btn btn-success float-right" attr="5" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button>
                         </div>

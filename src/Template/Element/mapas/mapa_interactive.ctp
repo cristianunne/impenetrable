@@ -110,13 +110,7 @@
                 '<button class="btn btn-success float-right" attr="3" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button>' +
                 '</div></div>' +
                 '<div class="card" style="margin-top: 20px;">' +
-                '<div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/fuerte_esperanza.png" ' +
-                'alt="header" width="100%" height="100%"></div>' +
-
-                '<div class="card-body"><h5 class="card-title" style="color: #198754;">Fuerte Esperanza</h5>' +
-                '<p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p><!-- Funcion de focus map -->' +
-                '<button class="btn btn-success float-right" attr="7" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div></div>' +
-
+                '<div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/fuerte_esperanza.png" alt="header" width="100%" height="100%"></div><div class="card-body"><h5 class="card-title" style="color: #198754;">Fuerte Esperanza</h5><p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p><!-- Funcion de focus map --><button class="btn btn-success float-right" attr="3" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div></div>' +
                 '<div class="card" style="margin-top: 20px;"><div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/elsauzalito.png" alt="header" width="100%" height="100%" style="filter: saturate(180%);"> </div>' +
                 '<div class="card-body"> <h5 class="card-title" style="color: #198754;">El Sauzalito</h5><p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p><!-- Funcion de focus map --><button class="btn btn-success float-right" attr="4" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div></div>' +
                 '<div class="card" style="margin-top: 20px;"><div class="bd-placeholder-img card-img-top"><img class="img-header-card" src="../img/header_loc/vrbermejito.png" alt="header" width="100%" height="100%" style="filter: saturate(180%);"></div><div class="card-body"><h5 class="card-title" style="color: #198754;">Villa Rio Bermejito</h5><p class="card-text">Se localiza a unos 308,5 Km. de la ciudad de Resistencia por Ruta Provincial Nº 9.</p><!-- Funcion de focus map --> <button class="btn btn-success float-right" attr="5" onclick="viewMoreBtnLocalidad(this)"><i class="fas fa-map-marked-alt"></i> Ver más....</button></div> </div>' +
